@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html {
+  font-size: 66.5%; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainApp .design {
+  /*background-color: #f0f0f0;*/
+  height: 50rem;
+  width: 100%;
+  position: absolute;
+  z-index: -33; }
+  .mainApp .design .color_box {
+    display: flex;
+    justify-content: space-around;
+    overflow: none; }
+    .mainApp .design .color_box .c1 {
+      position: relative;
+      width: 50%;
+      height: 15rem;
+      border-radius: 10%;
+      background-image: linear-gradient(to bottom, rgba(132, 44, 85, 0.15), rgba(48, 162, 228, 0.15));
+      filter: blur(50px);
+      z-index: -32; }
+    .mainApp .design .color_box .c2 {
+      position: relative;
+      width: 50%;
+      height: 15rem;
+      border-radius: 10%;
+      background-image: linear-gradient(to bottom, rgba(115, 212, 78, 0.19), rgba(5, 152, 74, 0.45));
+      filter: blur(50px);
+      z-index: -32; }
+    .mainApp .design .color_box .c3 {
+      position: relative;
+      width: 50%;
+      height: 22rem;
+      border-radius: 20%;
+      background-image: linear-gradient(to bottom, rgba(251, 27, 131, 0.19), rgba(228, 48, 48, 0.19));
+      filter: blur(50px);
+      z-index: -32; }
+    .mainApp .design .color_box .c4 {
+      position: relative;
+      width: 50%;
+      height: 10rem;
+      border-radius: 100%;
+      background-image: linear-gradient(to bottom, rgba(132, 44, 85, 0.33), rgba(48, 162, 228, 0.15));
+      filter: blur(50px);
+      z-index: -32; }
+    .mainApp .design .color_box .c5 {
+      position: relative;
+      width: 60%;
+      height: 20rem;
+      border-radius: 40%;
+      background-image: linear-gradient(to bottom, rgba(251, 27, 131, 0.15), rgba(228, 48, 48, 0.15));
+      filter: blur(50px);
+      z-index: -32; }
+    .mainApp .design .color_box .c6 {
+      position: relative;
+      width: 35%;
+      height: 10rem;
+      border-radius: 100%;
+      background-image: linear-gradient(to bottom, rgba(24, 185, 180, 0.19), rgba(48, 162, 228, 0.15));
+      filter: blur(50px);
+      z-index: -32; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 4.5rem;
+  /*background-color: #ebe4df;*/ }
+  .header img {
+    width: 5.5rem; }
+  .header .navlinks {
+    margin: 1rem;
+    padding: 1rem 0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem; }
+    .header .navlinks .navlink {
+      color: #54064e; }
+
+.public_view {
+  /*background-color: #ebe4df;*/ }
+  .public_view .headline {
+    font-size: 3.2rem;
+    width: 80%;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #370533;
+    padding: 2rem 0 2rem 4.5rem; }
+    .public_view .headline span {
+      font-size: 1.5rem; }
+  .public_view .form_box {
+    margin: 4.5rem 0rem 1rem 0;
+    padding: 0rem 4.5rem; }
+    .public_view .form_box .input_mobile {
+      width: 85%;
+      height: 3.2rem;
+      background-color: rgba(255, 255, 255, 0.31);
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5em 1em 0.5em 1.6em;
+      box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+      color: #560e50;
+      font-size: 1.2rem; }
+      .public_view .form_box .input_mobile:focus {
+        outline: none; }
+    .public_view .form_box .input_passcode {
+      width: 24%;
+      height: 3.2rem;
+      background-color: rgba(255, 255, 255, 0.31);
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5em 1em 0.5em 1.2em;
+      margin: 1rem 0;
+      box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+      color: #560e50;
+      font-size: 1.2rem; }
+      .public_view .form_box .input_passcode:focus {
+        outline: none; }
+    .public_view .form_box .input_submit {
+      width: 60%;
+      height: 4.2rem;
+      background-color: #460440;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 0rem 0 0 0.8rem;
+      box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+      color: white; }
+  .public_view .shop_login {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0rem 4.5rem;
+    margin: 2.5rem 0; }
+    .public_view .shop_login_link {
+      color: #33082f; }
+
+.features_section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 7rem 0;
+  padding: 2rem 4.5rem; }
+  .features_section .feature {
+    padding: 2rem 0.5rem;
+    position: relative; }
+    .features_section .feature_headline {
+      font-size: 1.4rem;
+      color: #33082f;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      text-decoration: underline; }
+    .features_section .feature_paragraph {
+      font-size: 1.2rem;
+      color: #40123c; }
+
+.working_section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 7rem 0;
+  padding: 5rem 0;
+  background-color: #eff9fc70; }
+  .working_section .working {
+    max-width: 60%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    margin: 2rem auto;
+    padding: 3rem 1.6rem; }
+    .working_section .working_image {
+      width: 60%;
+      margin: 0.3rem 0; }
+    .working_section .working_heading {
+      color: #57085161;
+      font-size: 1rem;
+      margin: 0.3rem 0; }
+    .working_section .working_sub_heading {
+      color: #460639;
+      font-size: 1.3rem;
+      margin: 0.3rem 0; }
+    .working_section .working_headline {
+      color: #6a0b58;
+      font-size: 1.2rem;
+      margin: 0.3rem 0; }
+
+.elite {
+  text-align: center; }
+
+.elite_section {
+  padding: 2rem 3.5rem; }
+  .elite_section_heading {
+    color: #3a043690;
+    font-size: 1.4rem;
+    margin-bottom: 12rem; }
+  .elite_section_box {
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+    border: 0.05rem solid #70707030;
+    border-radius: 2%; }
+    .elite_section_box_content {
+      margin-top: -15rem;
+      text-align: center; }
+      .elite_section_box_content_image {
+        width: 90%; }
+      .elite_section_box_content_heading {
+        color: #370533;
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 2rem; }
+      .elite_section_box_content_feature {
+        color: #3a043680;
+        font-size: 1rem;
+        border-bottom: 0.05rem solid #70707030;
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 80%; }
+
+.public_footer_section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  justify-content: space-between;
+  background-color: #fde4e880;
+  margin: 6rem 0 0 0; }
+  .public_footer_section .public_footer {
+    padding: 10rem 4.5rem 4rem 4.5rem; }
+    .public_footer_section .public_footer_sub_heading_1 {
+      color: #57095190;
+      font-size: 1rem; }
+    .public_footer_section .public_footer_sub_heading_2 {
+      color: #370533;
+      font-size: 1.2rem; }
+    .public_footer_section .public_footer_public_cta {
+      color: #9e1087;
+      font-size: 1.8rem;
+      font-weight: 900; }
+    .public_footer_section .public_footer_seperator {
+      display: flex;
+      margin: 4rem 0; }
+      .public_footer_section .public_footer_seperator_line {
+        height: 0rem;
+        width: 5rem;
+        color: #70707030;
+        border-bottom: 0.05rem solid #70707030; }
+      .public_footer_section .public_footer_seperator_text {
+        color: #570951;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin: -1rem 1rem; }
+    .public_footer_section .public_footer_sub_heading_3 {
+      color: #370533;
+      font-size: 1.2rem; }
+    .public_footer_section .public_footer_cta {
+      color: #9e1287;
+      font-size: 1.8rem;
+      font-weight: 900; }
+  .public_footer_section .public_footer_brand_name {
+    color: #3b0533;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    padding: 2rem 4.5rem; }
