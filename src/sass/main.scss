@@ -394,8 +394,9 @@ body {
 	}
 }
 
-.login_section {
-	width: 80%;
+.login_section,
+.register_section {
+	width: 85%;
 	margin: 0rem auto;
 
 	&_form {

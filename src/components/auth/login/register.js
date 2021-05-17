@@ -38,69 +38,74 @@ const Register = () => {
 	}
 
 	return (
-		<div className="Register">
-			<form onSubmit={handleSubmit}>
-				<label> Name </label>
+		<section className="register_section">
+			<form className="register_section_form" onSubmit={handleSubmit}>
+				<h2 className="login_section_form_title">Start Your Journey</h2>
 				<input
 					type="text"
-					placeholder="name"
+					placeholder="Name"
+					className="register_section_form_input"
 					onChange={(e) => setName(e.target.value)}
 					required
 				/>
 
-				<label> Shop Name </label>
 				<input
 					type="text"
-					placeholder="shop name"
+					placeholder="Shop Name"
+					className="register_section_form_input"
 					onChange={(e) => setShopname(e.target.value)}
 					required
 				/>
 
-				<label> Mobile Number </label>
 				<input
 					type="number"
-					placeholder="mobile number"
+					placeholder="Mobile Number"
+					className="register_section_form_input"
 					onChange={(e) => setNumber(e.target.value)}
 					required
 				/>
 
-				<label> Email </label>
 				<input
 					type="email"
-					placeholder="email"
+					placeholder="Email"
+					className="register_section_form_input"
 					onChange={(e) => setEmail(e.target.value)}
 					required
 				/>
 
-				<label> Password </label>
 				<input
 					type="password"
-					placeholder="password"
+					placeholder="Password"
+					className="register_section_form_input"
 					onChange={(e) => setPassword(e.target.value)}
 					required
 				/>
 
-				<label> Confirm Password </label>
 				<input
 					type="password"
-					placeholder="password"
+					placeholder="Confirm Password"
+					className="register_section_form_input"
 					onChange={(e) => setPassconf(e.target.value)}
 					required
 				/>
 
-				<label> Reward Percentage </label>
 				<input
 					type="number"
-					placeholder="reward"
+					placeholder="Reward Percentage"
+					className="register_section_form_input"
 					onChange={(e) => setReward(e.target.value)}
 					required
 				/>
 
-				<input type="submit" />
+				<input
+					className="register_section_form_submit "
+					type="submit"
+				/>
 			</form>
 
 			{error ? "error yes" : ""}
-		</div>
+			<h2 className="register_section_brand_name"> coopinn. </h2>
+		</section>
 	);
 };
 
