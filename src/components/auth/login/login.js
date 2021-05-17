@@ -18,27 +18,31 @@ const Login = () => {
 	}
 
 	return (
-		<div className="login">
-			<form onSubmit={handleSubmit}>
-				<label> Name </label>
+		<section className="login_section">
+			<form className="login_section_form" onSubmit={handleSubmit}>
+				<h2 className="login_section_form_title">
+					Login To Your Account
+				</h2>
 				<input
 					type="text"
-					placeholder="username"
+					placeholder="Email"
+					className="login_section_form_input"
 					onChange={(e) => setEmail(e.target.value)}
 					required
 				/>
 
-				<label> Password </label>
 				<input
 					type="password"
-					placeholder="password"
+					placeholder="Password"
+					className="login_section_form_input"
 					onChange={(e) => setPassword(e.target.value)}
 					required
 				/>
 
-				<input type="submit" />
+				<input className="login_section_form_submit" type="submit" />
 			</form>
-		</div>
+			<h2 className="login_section_brand_name"> coopinn. </h2>
+		</section>
 	);
 };
 
