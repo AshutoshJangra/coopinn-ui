@@ -16,7 +16,7 @@ const Profile = (props) => {
 
 	useEffect(() => {
 		axiosInstance
-			.get(`http://apicoopinn.herokuapp.com/api/v1/shops`)
+			.get(`https://apicoopinn.herokuapp.com/api/v1/shops`)
 			.then((res) => setUser(res.data));
 
 		// axiosInstance

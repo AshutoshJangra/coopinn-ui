@@ -26,7 +26,7 @@ const Detail = (props) => {
 	useEffect(() => {
 		axiosInstance
 			.get(
-				`http://apicoopinn.herokuapp.com/api/v1/users/${
+				`https://apicoopinn.herokuapp.com/api/v1/users/${
 					props.match.params.number
 				}`
 			)
@@ -48,7 +48,7 @@ const Detail = (props) => {
 		e.preventDefault();
 
 		axiosInstance
-			.post("http://apicoopinn.herokuapp.com/api/v1/transaction", data)
+			.post("https://apicoopinn.herokuapp.com/api/v1/transaction", data)
 			.then(
 				(res) => history.push("/"),
 				(err) => Promise.reject(err.response.data.message)

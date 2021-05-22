@@ -12,7 +12,7 @@ const PublicDetail = (props) => {
 	useEffect(() => {
 		axios
 			.get(
-				`http://apicoopinn.herokuapp.com/api/v1/users?number=${number}&code=${code}`
+				`https://apicoopinn.herokuapp.com/api/v1/users?number=${number}&code=${code}`
 			)
 			.then((res) => setUser(res.data.user));
 	}, [number, code]);
