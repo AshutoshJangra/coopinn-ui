@@ -39,7 +39,11 @@ const Login = () => {
 					required
 				/>
 
-				<input className="login_section_form_submit" type="submit" />
+				<input
+					className="login_section_form_submit"
+					value="Login"
+					type="submit"
+				/>
 			</form>
 			<h2 className="login_section_brand_name"> coopinn. </h2>
 		</section>

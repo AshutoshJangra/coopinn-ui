@@ -8,11 +8,18 @@ class AuthService {
     return localStorage.getItem(this.tokenKey);
   }
 
+  getName() {
+    const tkn = this.getToken();
+
+    return this.decode(tkn).id;
+  }
+
   decode(token) {
     return jwt.decode(JSON.parse(token));
   }
 
   saveToken(token) {
+    console.log(token);
     localStorage.setItem(this.tokenKey, JSON.stringify(token.token));
   }
 

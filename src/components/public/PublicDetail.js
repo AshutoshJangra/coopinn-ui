@@ -1,28 +1,38 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
+
+import InfoCard from "../shared/InfoCard";
+import Transactions from "../shared/Transactions";
 
 const PublicDetail = (props) => {
-	const [user, setUser] = useState({});
-	const [flag, setFlag] = useState(false);
+	const [user, setUser] = useState();
 	const { number, code } = props.match.params;
 
 	useEffect(() => {
 		axios
-			.get(`/api/v1/users?number=${number}&code=${code}`)
+			.get(
+				`http://apicoopinn.herokuapp.com/api/v1/users?number=${number}&code=${code}`
+			)
 			.then((res) => setUser(res.data.user));
 	}, [number, code]);
 
-	if (flag) {
-		return <Redirect to={{ pathname: "/" }} />;
-	}
-
 	return user ? (
-		<div>
-			<h4> Total Shopping: {user.totalShopping} </h4>
-			<h4> Total Rewards: {user.totalRewards} </h4>
-			<button onClick={() => setFlag(true)}> Back </button>
-		</div>
+		<section className="public_details">
+			<div className="public_details_card">
+				<InfoCard data={user} role="user" />
+				<Link className="public_details_card_back" to="/">
+					Go Back
+				</Link>
+			</div>
+
+			<div className="public_details_transactions">
+				<h2 className="public_details_transactions_headline">
+					Last Transactions
+				</h2>
+				<Transactions data={user.transactions} role="user" />
+			</div>
+		</section>
 	) : (
 		<div>
 			<h5> Please Wait... </h5>
