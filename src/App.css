@@ -6,10 +6,12 @@ html {
   font-size: 66.5%; }
 
 body {
+  box-sizing: border-box; }
+
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
-  box-sizing: border-box; }
+  line-height: 1.7; }
 
 .mainApp .design {
   /*background-color: #f0f0f0;*/
@@ -137,6 +139,10 @@ body {
       margin: 0rem 0 0 0.8rem;
       box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
       color: white; }
+      .public_view .form_box .input_submit:focus {
+        outline: none;
+        background: white;
+        color: #460440; }
   .public_view .shop_login {
     font-size: 1rem;
     font-weight: 700;
@@ -318,3 +324,215 @@ body {
     margin: 4rem 1rem;
     font-size: 1.2rem;
     font-weight: 900; }
+
+.dashboard {
+  margin: 2rem 4.5rem; }
+  .dashboard_form_heading {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #57085161;
+    margin: 0; }
+  .dashboard_form_name {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #370533;
+    margin: 0rem 1rem 3rem 0; }
+  .dashboard_form_input {
+    width: 65%;
+    height: 3.2rem;
+    background-color: rgba(255, 255, 255, 0.31);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5em 1em 0.5em 1.6em;
+    box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+    color: #560e50;
+    font-size: 1.2rem; }
+    .dashboard_form_input:focus {
+      outline: none; }
+  .dashboard_form_submit {
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #460440;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0rem 0 0 0.8rem;
+    box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5); }
+    .dashboard_form_submit:focus {
+      outline: none;
+      background: white;
+      color: #460440; }
+  .dashboard_coming_soon {
+    color: #460440;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 8rem 0 1rem 0; }
+  .dashboard_upcoming {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    margin: 1.6rem auto;
+    padding: 2.5rem; }
+    .dashboard_upcoming_sub_heading {
+      color: #46063999;
+      font-size: 1.1rem;
+      margin: 0.5rem 0; }
+    .dashboard_upcoming_headline {
+      color: #6a0b58;
+      font-size: 1.5rem;
+      margin: 0.5rem 0; }
+  .dashboard_brand_name {
+    text-transform: uppercase;
+    margin: 4rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 900; }
+
+/*info card shared */
+.info_card {
+  padding: 1rem; }
+  .info_card_row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+    .info_card_row1_id {
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: #6a0b58; }
+    .info_card_row1_code {
+      margin: -1.2rem 2rem 0 0; }
+      .info_card_row1_code_headline {
+        font-size: 0.9rem;
+        color: #46063999; }
+      .info_card_row1_code_value {
+        font-size: 1.5rem;
+        color: #111; }
+  .info_card_row2 {
+    display: flex;
+    justify-content: space-between; }
+    .info_card_row2_cl1_headline, .info_card_row2_cl2_headline {
+      font-size: 0.9rem;
+      color: #46063999; }
+    .info_card_row2_cl1_value, .info_card_row2_cl2_value {
+      font-size: 1.5rem;
+      color: #111; }
+    .info_card_row2_break {
+      height: 4rem;
+      margin-top: 0.2rem;
+      border: 0.1rem solid #70707030; }
+
+.details_section_card,
+.public_details_card {
+  background-color: #fff;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 2%;
+  margin: 0rem auto;
+  padding: 2.5rem;
+  max-width: 75%; }
+  .details_section_card_tagline,
+  .public_details_card_tagline {
+    font-size: 1.2rem;
+    color: #46063999;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0; }
+  .details_section_card_info,
+  .public_details_card_info {
+    padding: 1rem;
+    margin: 2.5rem 0; }
+  .details_section_card_form,
+  .public_details_card_form {
+    margin: 4rem 1rem;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column; }
+    .details_section_card_form_input,
+    .public_details_card_form_input {
+      display: flex;
+      justify-content: space-around; }
+      .details_section_card_form_input_1, .details_section_card_form_input_2,
+      .public_details_card_form_input_1,
+      .public_details_card_form_input_2 {
+        max-width: 38%;
+        padding: 1rem;
+        height: 2rem;
+        font-size: 1.2rem;
+        border: 0.1rem solid #70707080; }
+        .details_section_card_form_input_1:focus, .details_section_card_form_input_2:focus,
+        .public_details_card_form_input_1:focus,
+        .public_details_card_form_input_2:focus {
+          outline: none;
+          border: 0.1rem solid #6a0b58; }
+    .details_section_card_form_submit,
+    .public_details_card_form_submit {
+      height: 2rem;
+      font-size: 1.2 rem;
+      border: none;
+      background-color: #70707030;
+      padding: 2rem;
+      width: 97%;
+      margin: 1.5rem auto;
+      padding-bottom: 3rem;
+      text-transform: uppercase; }
+      .details_section_card_form_submit:focus,
+      .public_details_card_form_submit:focus {
+        outline: none;
+        background: #6a0b58;
+        color: white; }
+    .details_section_card_form_back,
+    .public_details_card_form_back {
+      margin: 1.5rem auto;
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: underline;
+      text-transform: uppercase; }
+  .details_section_card_back,
+  .public_details_card_back {
+    margin: 2.5rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase; }
+
+.details_section_brand_name,
+.public_details_brand_name {
+  text-transform: uppercase;
+  margin: 3rem;
+  font-size: 1.2rem;
+  font-weight: 900; }
+
+.details_section_transactions,
+.public_details_transactions {
+  margin: 4rem 3rem; }
+  .details_section_transactions_headline,
+  .public_details_transactions_headline {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #54064e; }
+
+.transactions {
+  margin: 2rem 0; }
+  .transactions_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 0.05rem solid #70707030; }
+    .transactions_box_row_name {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #54064e; }
+    .transactions_box_row_date {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #00000080; }
+    .transactions_box_row_bill {
+      color: green;
+      font-size: 1.1rem;
+      text-align: right; }
+    .transactions_box_row_debit {
+      color: red;
+      font-size: 1.1rem;
+      text-align: right; }

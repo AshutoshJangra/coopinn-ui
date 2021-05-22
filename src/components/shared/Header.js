@@ -10,8 +10,11 @@ const Header = () => {
 		if (isAuth) {
 			return (
 				<React.Fragment>
-					<Link className="navlink" to="/" onClick={signOut}>
+					{/*<Link className="navlink" to="/" onClick={signOut}>
 						logout
+					</Link>*/}
+					<Link className="navlink" to="/profile">
+						My Profile
 					</Link>
 				</React.Fragment>
 			);

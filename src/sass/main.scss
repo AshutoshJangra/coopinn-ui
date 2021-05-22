@@ -1,18 +1,13 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-html {
-	font-size: 66.5%;
-}
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
 
-body {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	line-height: 1.7;
-	box-sizing: border-box;
-}
+@import "pages/home";
 
 .mainApp {
 	& .design {
@@ -200,6 +195,12 @@ body {
 			margin: 0rem 0 0 0.8rem;
 			box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
 			color: white;
+
+			&:focus {
+				outline: none;
+				background: white;
+				color: #460440;
+			}
 		}
 	}
 
@@ -446,5 +447,284 @@ body {
 		margin: 4rem 1rem;
 		font-size: 1.2rem;
 		font-weight: 900;
+	}
+}
+
+.dashboard {
+	margin: 2rem 4.5rem;
+
+	&_form {
+		&_heading {
+			font-size: 2rem;
+			font-weight: 900;
+			color: #57085161;
+			margin: 0;
+		}
+
+		&_name {
+			font-size: 3rem;
+			font-weight: 900;
+			color: #370533;
+			margin: 0rem 1rem 3rem 0;
+		}
+
+		&_input {
+			width: 65%;
+			height: 3.2rem;
+			background-color: rgba(255, 255, 255, 0.31);
+			border: none;
+			border-radius: 0.5rem;
+			padding: 0.5em 1em 0.5em 1.6em;
+			box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+			color: #560e50;
+			font-size: 1.2rem;
+			&:focus {
+				outline: none;
+			}
+		}
+
+		&_submit {
+			border: none;
+			font-size: 1.2rem;
+			color: white;
+			background-color: #460440;
+			border-radius: 0.5rem;
+			padding: 1.5rem;
+			font-weight: 700;
+			font-size: 1.2rem;
+			margin: 0rem 0 0 0.8rem;
+			box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+			&:focus {
+				outline: none;
+				background: white;
+				color: #460440;
+			}
+		}
+	}
+
+	&_coming_soon {
+		color: #460440;
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		margin: 8rem 0 1rem 0;
+	}
+
+	&_upcoming {
+		text-align: center;
+		background-color: #fff;
+		box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+		border-radius: 2%;
+		margin: 1.6rem auto;
+		padding: 2.5rem;
+
+		&_sub_heading {
+			color: #46063999;
+			font-size: 1.1rem;
+			margin: 0.5rem 0;
+		}
+
+		&_headline {
+			color: #6a0b58;
+			font-size: 1.5rem;
+			margin: 0.5rem 0;
+		}
+	}
+
+	&_brand_name {
+		text-transform: uppercase;
+		margin: 4rem 1rem;
+		font-size: 1.2rem;
+		font-weight: 900;
+	}
+}
+
+/*info card shared */
+
+.info_card {
+	padding: 1rem;
+
+	&_row1 {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+
+		&_id {
+			font-size: 1.9rem;
+			font-weight: 900;
+			color: #6a0b58;
+		}
+
+		&_code {
+			margin: -1.2rem 2rem 0 0;
+			&_headline {
+				font-size: 0.9rem;
+				color: #46063999;
+			}
+			&_value {
+				font-size: 1.5rem;
+				color: #111;
+			}
+		}
+	}
+
+	&_row2 {
+		display: flex;
+		justify-content: space-between;
+
+		&_cl1,
+		&_cl2 {
+			&_headline {
+				font-size: 0.9rem;
+				color: #46063999;
+			}
+			&_value {
+				font-size: 1.5rem;
+				color: #111;
+			}
+		}
+
+		&_break {
+			height: 4rem;
+			margin-top: 0.2rem;
+			border: 0.1rem solid #70707030;
+		}
+	}
+}
+
+.details_section,
+.public_details {
+	&_card {
+		background-color: #fff;
+		box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+		border-radius: 2%;
+		margin: 0rem auto;
+		padding: 2.5rem;
+		max-width: 75%;
+
+		&_tagline {
+			font-size: 1.2rem;
+			color: #46063999;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 1rem 0;
+		}
+		&_info {
+			padding: 1rem;
+			margin: 2.5rem 0;
+		}
+
+		&_form {
+			margin: 4rem 1rem;
+			margin-bottom: 0rem;
+			display: flex;
+			flex-direction: column;
+
+			&_input {
+				display: flex;
+				justify-content: space-around;
+
+				&_1,
+				&_2 {
+					max-width: 38%;
+					padding: 1rem;
+					height: 2rem;
+					font-size: 1.2rem;
+					border: 0.1rem solid #70707080;
+
+					&:focus {
+						outline: none;
+						border: 0.1rem solid #6a0b58;
+					}
+				}
+			}
+
+			&_submit {
+				height: 2rem;
+				font-size: 1.2 rem;
+				border: none;
+				background-color: #70707030;
+				padding: 2rem;
+				width: 97%;
+				margin: 1.5rem auto;
+				padding-bottom: 3rem;
+				text-transform: uppercase;
+
+				&:focus {
+					outline: none;
+					background: #6a0b58;
+					color: white;
+				}
+			}
+
+			&_back {
+				margin: 1.5rem auto;
+				font-size: 1.2rem;
+				text-align: center;
+				text-decoration: underline;
+				text-transform: uppercase;
+			}
+		}
+
+		&_back {
+			margin: 2.5rem 1rem;
+			font-size: 1.2rem;
+			text-align: center;
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+	}
+
+	&_brand_name {
+		text-transform: uppercase;
+		margin: 3rem;
+		font-size: 1.2rem;
+		font-weight: 900;
+	}
+
+	&_transactions {
+		&_headline {
+			font-weight: 700;
+			font-size: 1rem;
+			color: #54064e;
+		}
+
+		margin: 4rem 3rem;
+	}
+}
+
+.transactions {
+	margin: 2rem 0;
+	&_box {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 0;
+		padding: 1rem 0;
+		border-bottom: 0.05rem solid #70707030;
+
+		&_row {
+			&_name {
+				font-weight: 700;
+				font-size: 1.3rem;
+				color: #54064e;
+			}
+
+			&_date {
+				font-size: 1rem;
+				font-weight: 500;
+				color: #00000080;
+			}
+
+			&_bill {
+				color: green;
+				font-size: 1.1rem;
+				text-align: right;
+			}
+
+			&_debit {
+				color: red;
+				font-size: 1.1rem;
+				text-align: right;
+			}
+		}
 	}
 }

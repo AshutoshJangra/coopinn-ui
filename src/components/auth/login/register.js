@@ -99,6 +99,7 @@ const Register = () => {
 
 				<input
 					className="register_section_form_submit "
+					value="Sign Up"
 					type="submit"
 				/>
 			</form>
