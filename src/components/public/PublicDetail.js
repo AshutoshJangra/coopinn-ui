@@ -14,13 +14,13 @@ const PublicDetail = (props) => {
 			.get(
 				`https://apicoopinn.herokuapp.com/api/v1/users?number=${number}&code=${code}`
 			)
-			.then((res) => setUser(res.data.user));
+			.then((res) => setUser(res.data));
 	}, [number, code]);
 
 	return user ? (
 		<section className="public_details">
 			<div className="public_details_card">
-				<InfoCard data={user} role="user" />
+				<InfoCard data={user.user} role="user" />
 				<Link className="public_details_card_back" to="/">
 					Go Back
 				</Link>
