@@ -23,8 +23,11 @@ const PublicView = () => {
 	return (
 		<div className="public_view">
 			<h1 className="headline">
-				Coin <span>At</span>
-				<br /> Every Pinn.
+				Coin At <br /> Every <br /> <span> Pinn.</span>
+				<p className="headline_description">
+					Get Assured Discounts Upto 10% on Your Every Purchase at
+					Coopinn Merchant
+				</p>
 			</h1>
 			<form className="form_box" onSubmit={handleSubmit}>
 				<input
@@ -45,14 +48,14 @@ const PublicView = () => {
 				<input
 					className="input_submit"
 					type="submit"
-					value="Let's Coopinn &rarr;"
+					value="Go &rarr;"
 				/>
 			</form>
 
 			<div className="shop_login">
-				<Link className="shop_login_link" to="/login">
-					Login as merchant &rarr;
-				</Link>
+				{/*<Link className="shop_login_link" to="/login">
+					view your profile &rarr;
+				</Link>*/}
 			</div>
 
 			<section className="features">

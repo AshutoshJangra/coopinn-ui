@@ -111,23 +111,26 @@
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: 3.5rem 4.5rem;
+	padding: 0.8rem 3rem;
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
 
 	/*background-color: #ebe4df;*/
 
-	& img {
-		width: 5.5rem;
+	& .logo {
+		margin: 1rem;
+		font-size: 2rem;
 	}
 
 	& .navlinks {
-		margin: 1rem;
-		padding: 1rem 0rem;
-		text-transform: uppercase;
+		margin: 0.8rem;
+		padding: 0.8rem 0;
+		/*text-transform: uppercase;*/
 		font-weight: 700;
-		font-size: 1rem;
+		font-size: 1.2rem;
 
 		& .navlink {
-			color: #54064e;
+			/*color: #ff0d7b;*/
+			text-decoration: none;
 		}
 	}
 }
@@ -136,70 +139,79 @@
 	/*background-color: #ebe4df;*/
 
 	& .headline {
-		font-size: 3.2rem;
-		width: 80%;
-		font-weight: 900;
+		font-size: 4.5rem;
+		/*width: 70%;*/
+		font-weight: 300;
 		line-height: 1.3;
-		color: #370533;
-		padding: 2rem 0 2rem 4.5rem;
-
+		margin: 1.6rem;
+		padding: 4rem 2rem 3.5rem 2rem;
 		& span {
+			font-size: 7.5rem;
+			font-weight: 600;
+			color: #ff0d7b;
+		}
+
+		&_description {
+			padding: 2rem 0.5rem 0 0.5rem;
 			font-size: 1.5rem;
 		}
 	}
 
 	& .form_box {
-		margin: 4.5rem 0rem 1rem 0;
-		padding: 0rem 4.5rem;
+		margin: 0 2rem;
+		padding: 0 1.6rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-gap: 1rem;
 
 		& .input_mobile {
-			width: 85%;
-			height: 3.2rem;
-			background-color: rgba(255, 255, 255, 0.31);
-			border: none;
-			border-radius: 0.5rem;
-			padding: 0.5em 1em 0.5em 1.6em;
-			box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
-			color: #560e50;
-			font-size: 1.2rem;
+			grid-column: auto / span 2;
+
+			/*height: 2.4rem;*/
+			border: 0.05rem solid #666;
+			border-radius: 2rem;
+			padding: 1.4rem;
+			color: #333;
+			font-size: 1.4rem;
 			&:focus {
 				outline: none;
 			}
 		}
 
 		& .input_passcode {
-			width: 24%;
-			height: 3.2rem;
-			background-color: rgba(255, 255, 255, 0.31);
-			border: none;
-			border-radius: 0.5rem;
-			padding: 0.5em 1em 0.5em 1.2em;
-			margin: 1rem 0;
-			box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
-			color: #560e50;
-			font-size: 1.2rem;
+			/*width: 24%;*/
+			/*height: 3.2rem;*/
+			/*grid_area: input_passcode;*/
+			/*height: 2.4rem;*/
+			border: 0.05rem solid #666;
+			border-radius: 2rem;
+			padding: 1.4rem;
+			color: #333;
+			font-size: 1.4rem;
 			&:focus {
 				outline: none;
 			}
 		}
 
 		& .input_submit {
-			width: 60%;
-			height: 4.2rem;
-			background-color: #460440;
+			/*width: 60%;*/
+			/*height: 4.2rem;*/
+			/*grid-area: input_submit;*/
+			background-color: #222;
+			/*height: 4.4rem;*/
 			border: none;
-			border-radius: 0.5rem;
-			padding: 1rem;
-			font-weight: 700;
-			font-size: 1.2rem;
-			margin: 0rem 0 0 0.8rem;
-			box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
+			border-radius: 2rem;
+			padding: 1.4rem;
+			color: #000;
+			font-size: 1.4rem;
+			/*box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);*/
 			color: white;
 
 			&:focus {
 				outline: none;
 				background: white;
-				color: #460440;
+				color: #ff0d7b;
 			}
 		}
 	}
@@ -209,11 +221,12 @@
 		font-weight: 700;
 		text-transform: uppercase;
 
-		padding: 0rem 4.5rem;
-		margin: 2.5rem 0;
+		padding: 0rem 5.5rem;
+		margin: 1rem 0;
 
 		&_link {
-			color: #33082f;
+			color: #111;
+			text-decoration: none;
 		}
 	}
 }
@@ -222,22 +235,24 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 7rem 0;
-	padding: 2rem 4.5rem;
+	padding: 6rem 3rem;
+	background-color: #fafafa;
 
 	& .feature {
-		padding: 2rem 0.5rem;
+		padding: 3rem 0.5rem;
 		position: relative;
 		&_headline {
-			font-size: 1.4rem;
-			color: #33082f;
+			font-size: 1.6rem;
+			font-weight: 600;
+			color: #000;
 			text-transform: uppercase;
 			margin-bottom: 0.8rem;
-			text-decoration: underline;
+			/*text-decoration: underline;*/
 		}
 
 		&_paragraph {
-			font-size: 1.2rem;
-			color: #40123c;
+			font-size: 1.4rem;
+			color: #111;
 		}
 	}
 }
@@ -245,9 +260,9 @@
 .working_section {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 7rem 0;
+
 	padding: 5rem 0;
-	background-color: #eff9fc70;
+	/*background-color: #eff9fc70;*/
 
 	& .working {
 		max-width: 60%;
@@ -264,20 +279,21 @@
 		}
 
 		&_heading {
-			color: #57085161;
-			font-size: 1rem;
+			color: #ff0d7b;
+
+			font-size: 1.2rem;
 			margin: 0.3rem 0;
 		}
 
 		&_sub_heading {
-			color: #460639;
-			font-size: 1.3rem;
+			color: #000;
+			font-size: 1.6rem;
 			margin: 0.3rem 0;
 		}
 
 		&_headline {
-			color: #6a0b58;
-			font-size: 1.2rem;
+			color: #111;
+			font-size: 1.4rem;
 			margin: 0.3rem 0;
 		}
 	}
@@ -288,19 +304,20 @@
 }
 
 .elite_section {
-	padding: 2rem 3.5rem;
+	padding: 5rem 3.5rem;
 
 	&_heading {
-		color: #3a043690;
-		font-size: 1.4rem;
-		margin-bottom: 12rem;
+		color: #000;
+		font-size: 1.6rem;
+		margin-bottom: 14rem;
+		text-transform: uppercase;
 	}
 
 	&_box {
 		margin: 2rem auto;
 
 		padding: 3rem 1rem;
-		border: 0.05rem solid #70707030;
+		border: 0.05rem solid #aaa;
 		border-radius: 2%;
 
 		&_content {
@@ -312,15 +329,15 @@
 
 			&_heading {
 				color: #370533;
-				font-size: 2rem;
+				font-size: 2.4rem;
 				font-weight: 900;
-				margin: 2rem;
+				margin: 2.4rem;
 			}
 
 			&_feature {
-				color: #3a043680;
-				font-size: 1rem;
-				border-bottom: 0.05rem solid #70707030;
+				color: #666;
+				font-size: 1.4rem;
+				border-bottom: 0.05rem solid #bbb;
 				padding: 1rem;
 				margin: 1rem auto;
 				max-width: 80%;
@@ -333,26 +350,25 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #fde4e880;
-	margin: 6rem 0 0 0;
+	background-color: #fff;
+	margin: 1rem 0 0 0;
 
 	& .public_footer {
-		padding: 10rem 4.5rem 4rem 4.5rem;
+		padding: 1rem 4.5rem 1rem 4.5rem;
 
 		&_sub_heading_1 {
-			color: #57095190;
-			font-size: 1rem;
+			color: #111;
+			font-size: 1.6rem;
 		}
 
 		&_sub_heading_2 {
-			color: #370533;
-			font-size: 1.2rem;
+			color: #000;
+			font-size: 1.6rem;
 		}
 
 		&_public_cta {
-			color: #9e1087;
-			font-size: 1.8rem;
-			font-weight: 900;
+			color: #ff0d7b;
+			font-size: 1.4rem;
 		}
 
 		&_seperator {
@@ -387,8 +403,8 @@
 
 	& .public_footer_brand_name {
 		color: #3b0533;
-		font-size: 1.3rem;
-		font-weight: 900;
+		font-size: 1.6rem;
+		font-weight: 600;
 		text-transform: uppercase;
 		margin: 2rem 0;
 		padding: 2rem 4.5rem;

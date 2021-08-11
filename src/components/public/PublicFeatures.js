@@ -18,7 +18,7 @@ const PublicFeatures = () => {
 				</p>
 			</div>
 			<div className="feature_3 feature">
-				<h2 className="feature_headline">Coopinn Elite</h2>
+				<h2 className="feature_headline">Coopinn Rewards</h2>
 				<p className="feature_paragraph">
 					save money on every purchase. get assured cashback and use
 					it for your next purchase

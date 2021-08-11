@@ -30,9 +30,8 @@ const Header = () => {
 	};
 	return (
 		<div className="header">
-			<label className="logoCo">
-				<img src={logoCo} />
-			</label>
+			{/*<img src={logoCo} />*/}
+			<h2 className="logo">coopinn.</h2>
 
 			<nav className="navlinks">{renderLink()}</nav>
 		</div>
