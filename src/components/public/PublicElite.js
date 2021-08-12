@@ -1,5 +1,5 @@
 import React from "react";
-import eliteCard from "../../images/eliteCard.png";
+import eliteCard from "../../images/eliteCard.svg";
 
 const PublicElite = () => {
 	return (
@@ -14,24 +14,24 @@ const PublicElite = () => {
 						alt="image_1"
 					/>
 					<h2 className="elite_section_box_content_heading">
-						Coopinn Elite
+						Coopinn Rewards
 					</h2>
 
-					<h4 className="elite_section_box_content_feature">
+					<p className="elite_section_box_content_feature">
 						Show Card At Any Coopinn Merchant
-					</h4>
-					<h4 className="elite_section_box_content_feature">
+					</p>
+					<p className="elite_section_box_content_feature">
 						Get Or Redeem Credits
-					</h4>
-					<h4 className="elite_section_box_content_feature">
+					</p>
+					<p className="elite_section_box_content_feature">
 						Customized Coopinn Elite Card
-					</h4>
-					<h4 className="elite_section_box_content_feature">
+					</p>
+					<p className="elite_section_box_content_feature">
 						Hassle Free
-					</h4>
-					<h4 className="elite_section_box_content_feature">
+					</p>
+					<p className="elite_section_box_content_feature">
 						Seemless Checkout
-					</h4>
+					</p>
 				</div>
 			</div>
 		</section>

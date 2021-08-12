@@ -7,12 +7,13 @@ const PublicFooter = () => {
 	return (
 		<section className="public_footer_section">
 			<div className="public_footer">
-				<h3 className="public_footer_public_cta">
-					GET YOUR CARD NOW AT ANY COOPINN PARTNER
-				</h3>
+				<p className="public_footer_public_cta">
+					Get Your Card
+					<span>NOW</span>
+				</p>
 			</div>
 
-			<h2 className="public_footer_brand_name"> Coopinn. </h2>
+			<h2 className="public_footer_brand_name"> coopinn. </h2>
 		</section>
 	);
 };

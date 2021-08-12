@@ -6,6 +6,8 @@ import PublicWorking from "./PublicWorking";
 import PublicElite from "./PublicElite";
 import PublicFooter from "./PublicFooter";
 
+import coopinncard from "../../images/coopinncard.svg";
+
 const PublicView = () => {
 	const [number, setNumber] = useState();
 	const [code, setCode] = useState();
@@ -22,9 +24,14 @@ const PublicView = () => {
 
 	return (
 		<div className="public_view">
-			<h1 className="headline">
-				Coin At <br /> Every <br /> <span> Pinn.</span>
-				<p className="headline_description">
+			<h1 className="public_view_headline">
+				{/*<div className="public_view_headline_design">
+					<div className="public_view_headline_design_color_box">
+						<img src={coopinncard} alt="" />
+					</div>
+				</div>*/}
+				Coin At <br /> Every <span> Pinn.</span>
+				<p className="public_view_headline_description">
 					Get Assured Discounts Upto 10% on Your Every Purchase at
 					Coopinn Merchant
 				</p>
