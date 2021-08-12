@@ -171,6 +171,12 @@ h6 {
     .public_view .shop_login_link {
       color: #111;
       text-decoration: none; }
+  .public_view .hero_banner {
+    text-align: center;
+    margin: 0rem auto; }
+    .public_view .hero_banner .image {
+      margin: 4rem auto -10rem auto;
+      max-width: 80%; }
 
 .features_section {
   display: flex;

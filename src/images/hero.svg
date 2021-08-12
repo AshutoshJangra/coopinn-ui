@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1688" height="989" viewBox="0 0 1688 989">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_1);
+      }
+
+      .cls-2 {
+        fill: #ff1a60;
+      }
+
+      .cls-3 {
+        fill: rgba(44,40,40,0.73);
+        font-size: 49px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+      }
+
+      .cls-4 {
+        fill: #2c2828;
+        font-size: 94px;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: Montserrat-Black, Montserrat;
+        font-weight: 800;
+      }
+
+      .cls-10, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-8, .cls-9 {
+        font-size: 64px;
+      }
+
+      .cls-5, .cls-8 {
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .cls-6 {
+        font-size: 100px;
+      }
+
+      .cls-7 {
+        font-size: 111px;
+      }
+
+      .cls-7, .cls-9 {
+        font-family: Montserrat-Medium, Montserrat;
+        font-weight: 500;
+      }
+
+      .cls-8 {
+        font-weight: 400;
+      }
+    </style>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1688" height="989"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" class="cls-1">
+    <rect class="cls-10" width="1688" height="989"/>
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M392.677,11.554H1188.23V1100.963L112.193,1025.6Z" transform="translate(499.77 -20.963)"/>
+    <text id="_1_New_Notification" data-name="1 New Notification" class="cls-3" transform="translate(323 191)"><tspan x="-230.57" y="0">1 New Notification</tspan></text>
+    <text id="Welcome_to_coopinn" data-name="Welcome to
+coopinn" class="cls-4" transform="translate(96 316)"><tspan x="0" y="91">Welcome </tspan><tspan x="0" y="221">to</tspan><tspan x="0" y="351">coopinn</tspan></text>
+    <text id="You_Earned_Rs._25_discount_on_your_shopping_of_250_Nature_Grocer_" data-name="You Earned 
+Rs. 25 discount
+on your shopping of 250 @
+Nature Grocer " class="cls-5" transform="translate(844 203)"><tspan x="199.756" y="62">You Earned </tspan><tspan class="cls-6"><tspan x="71.585" y="187">Rs. 25</tspan><tspan class="cls-7" y="187"> </tspan><tspan class="cls-8" y="187">discount</tspan></tspan><tspan x="61.292" y="312">on your shopping of </tspan><tspan x="284.588" y="437">250 @</tspan><tspan class="cls-6"><tspan x="2.4" y="562">Nature Grocer</tspan><tspan class="cls-9" y="562"> </tspan></tspan></text>
+  </g>
+</svg>

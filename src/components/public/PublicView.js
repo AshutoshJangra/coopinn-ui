@@ -7,6 +7,7 @@ import PublicElite from "./PublicElite";
 import PublicFooter from "./PublicFooter";
 
 import coopinncard from "../../images/coopinncard.svg";
+import hero from "../../images/hero.svg";
 
 const PublicView = () => {
 	const [number, setNumber] = useState();
@@ -63,6 +64,14 @@ const PublicView = () => {
 				{/*<Link className="shop_login_link" to="/login">
 					view your profile &rarr;
 				</Link>*/}
+			</div>
+
+			<div className="hero_banner">
+				{/*<Link className="shop_login_link" to="/login">
+					view your profile &rarr;
+				</Link>*/}
+
+				<img className="image" src={hero} alt="" />
 			</div>
 
 			<section className="features">

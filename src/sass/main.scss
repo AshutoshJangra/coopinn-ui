@@ -230,6 +230,15 @@
 			text-decoration: none;
 		}
 	}
+
+	& .hero_banner {
+		text-align: center;
+		margin: 0rem auto;
+		& .image {
+			margin: 4rem auto -10rem auto;
+			max-width: 80%;
+		}
+	}
 }
 
 .features_section {
