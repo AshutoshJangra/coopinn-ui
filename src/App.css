@@ -25,7 +25,8 @@ h6 {
 .mainApp .design {
   /*background-color: #f0f0f0;*/
   height: 50rem;
-  width: 80%;
+  width: 100%;
+  overflow: hidden;
   position: absolute;
   z-index: -33; }
   .mainApp .design .color_box {
@@ -34,7 +35,7 @@ h6 {
     overflow: none; }
     .mainApp .design .color_box .c1 {
       position: relative;
-      width: 50%;
+      width: 0%;
       height: 15rem;
       border-radius: 10%;
       background-image: linear-gradient(to bottom, rgba(132, 44, 85, 0.15), rgba(48, 162, 228, 0.15));
@@ -42,7 +43,7 @@ h6 {
       z-index: -32; }
     .mainApp .design .color_box .c2 {
       position: relative;
-      width: 50%;
+      width: 0%;
       height: 15rem;
       border-radius: 10%;
       background-image: linear-gradient(to bottom, rgba(115, 212, 78, 0.19), rgba(5, 152, 74, 0.45));
@@ -50,7 +51,7 @@ h6 {
       z-index: -32; }
     .mainApp .design .color_box .c3 {
       position: relative;
-      width: 50%;
+      width: 0%;
       height: 22rem;
       border-radius: 20%;
       background-image: linear-gradient(to bottom, rgba(251, 27, 131, 0.19), rgba(228, 48, 48, 0.19));
@@ -58,27 +59,34 @@ h6 {
       z-index: -32; }
     .mainApp .design .color_box .c4 {
       position: relative;
-      width: 50%;
+      width: 0%;
       height: 10rem;
       border-radius: 100%;
       background-image: linear-gradient(to bottom, rgba(132, 44, 85, 0.33), rgba(48, 162, 228, 0.15));
-      filter: blur(50px);
+      /*filter: blur(50px);*/
       z-index: -32; }
     .mainApp .design .color_box .c5 {
       position: relative;
-      width: 60%;
-      height: 20rem;
-      border-radius: 40%;
-      background-image: linear-gradient(to bottom, rgba(251, 27, 131, 0.15), rgba(228, 48, 48, 0.15));
-      filter: blur(50px);
-      z-index: -32; }
+      top: -27rem;
+      left: 30rem;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 1000%;
+      overflow: hidden;
+      background-color: none;
+      border: 0.05rem solid black;
+      /*filter: blur(50px);*/
+      z-index: -29; }
     .mainApp .design .color_box .c6 {
       position: relative;
-      width: 35%;
-      height: 10rem;
-      border-radius: 100%;
-      background-image: linear-gradient(to bottom, rgba(24, 185, 180, 0.19), rgba(48, 162, 228, 0.15));
-      filter: blur(50px);
+      top: -16.5rem;
+      left: 10rem;
+      width: 11rem;
+      overflow: hidden;
+      height: 11rem;
+      border-radius: 1000%;
+      background-color: #ff0d7b;
+      /*filter: blur(50px);*/
       z-index: -32; }
 
 .header {
@@ -88,8 +96,11 @@ h6 {
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
   /*background-color: #ebe4df;*/ }
   .header .logo {
-    margin: 1rem;
-    font-size: 2rem; }
+    margin: 1.2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000; }
   .header .navlinks {
     margin: 0.8rem;
     padding: 0.8rem 0;
@@ -103,19 +114,19 @@ h6 {
 .public_view {
   /*background-color: #ebe4df;*/ }
   .public_view_headline {
-    font-size: 5.6rem;
+    font-size: 4.8rem;
     /*width: 70%;*/
     font-weight: 300;
     line-height: 1.3;
     margin: 2.4rem 1.6rem;
     padding: 4.8rem 2rem 3.2rem 2rem; }
     .public_view_headline span {
-      font-size: 6.4rem;
+      font-size: 5.6rem;
       font-weight: 600;
       color: #ff0d7b; }
     .public_view_headline_description {
       padding: 3.2rem 0.5rem 0.8rem 0.5rem;
-      font-size: 1.5rem; }
+      font-size: 1.4rem; }
   .public_view .form_box {
     margin: 0 2rem;
     padding: 0 1.6rem;
@@ -160,8 +171,8 @@ h6 {
       color: white; }
       .public_view .form_box .input_submit:focus {
         outline: none;
-        background: white;
-        color: #ff0d7b; }
+        color: white;
+        background-color: #ff0d7b; }
   .public_view .shop_login {
     font-size: 1rem;
     font-weight: 700;
@@ -185,7 +196,7 @@ h6 {
   padding: 6rem 3rem;
   background-color: #fafafa; }
   .features_section .feature {
-    padding: 3rem 0.5rem;
+    padding: 3.6rem 0.5rem;
     position: relative; }
     .features_section .feature_headline {
       font-size: 1.6rem;
@@ -201,7 +212,7 @@ h6 {
 .working_section {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 5rem;
+  padding: 2.4rem 5rem;
   /*background-color: #eff9fc70;*/ }
   .working_section .working {
     /*max-width: 60%;*/
@@ -232,7 +243,7 @@ h6 {
   text-align: center; }
 
 .elite_section {
-  padding: 5rem 2.4rem 0 2.4rem; }
+  padding: 6.4rem 2.4rem 0 2.4rem; }
   .elite_section_heading {
     color: #000;
     font-size: 1.6rem;
@@ -241,7 +252,7 @@ h6 {
   .elite_section_box {
     margin: 2rem auto;
     margin-bottom: 0;
-    padding: 3rem 1rem;
+    padding: 4.8rem 1rem;
     /*border: 0.05rem solid #aaa;*/
     border-radius: 2%;
     background-color: #fafafa; }
@@ -256,7 +267,7 @@ h6 {
         /*font-weight: 900;*/
         margin: 2.4rem; }
       .elite_section_box_content_feature {
-        color: #666;
+        color: #111;
         font-size: 1.4rem;
         /*border-bottom: 0.05rem solid #bbb;*/
         padding: 1rem;
@@ -283,9 +294,9 @@ h6 {
       padding: 4rem 3.2rem;
       text-align: center;
       background-color: #ff0d7b;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
       .public_footer_section .public_footer_public_cta span {
-        font-size: 2.2rem;
+        font-size: 2rem;
         padding: 0 1rem;
         text-decoration: underline; }
     .public_footer_section .public_footer_seperator {
@@ -318,161 +329,173 @@ h6 {
 
 .login_section,
 .register_section {
-  width: 85%;
-  margin: 0rem auto; }
+  /*width: 85%;*/
+  margin: 2rem auto; }
   .login_section_form,
   .register_section_form {
     display: flex;
     flex-direction: column;
     padding: 3rem;
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    /*box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);*/
+    /*background-color: #fff;*/
     text-align: center; }
     .login_section_form_title,
     .register_section_form_title {
-      color: #570851;
-      font-size: 1.6rem;
-      font-weight: 900;
+      color: #111;
+      font-size: 1.8rem;
+      font-weight: 700;
       margin: 3rem 0; }
     .login_section_form_input,
     .register_section_form_input {
-      color: #570851;
-      font-size: 1.2rem;
-      border: none;
-      border-bottom: 0.1rem solid #000;
-      margin: 1.6rem 0; }
+      border: 0.05rem solid #666;
+      border-radius: 2rem;
+      padding: 1.4rem;
+      color: #333;
+      font-size: 1.4rem;
+      margin: 1rem 0; }
       .login_section_form_input:focus,
       .register_section_form_input:focus {
         outline: none; }
     .login_section_form_submit,
     .register_section_form_submit {
+      background-color: #222;
+      /*height: 4.4rem;*/
       border: none;
-      background-color: #460440;
-      color: white;
-      border-radius: 2%;
-      margin: 3rem 0;
-      padding: 1.2rem;
-      font-size: 1.4rem; }
+      border-radius: 2rem;
+      padding: 1.4rem;
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      /*box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);*/
+      color: white; }
       .login_section_form_submit:focus,
       .register_section_form_submit:focus {
-        outline: none; }
+        outline: none;
+        background: white;
+        color: #ff0d7b; }
   .login_section_brand_name,
   .register_section_brand_name {
-    text-transform: uppercase;
-    margin: 4rem 1rem;
-    font-size: 1.2rem;
+    /*text-transform: uppercase;*/
+    margin: 4rem;
+    font-size: 1.6rem;
     font-weight: 900; }
 
 .dashboard {
-  margin: 2rem 4.5rem; }
-  .dashboard_form_heading {
-    font-size: 2rem;
-    font-weight: 900;
-    color: #57085161;
-    margin: 0; }
-  .dashboard_form_name {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #370533;
-    margin: 0rem 1rem 3rem 0; }
-  .dashboard_form_input {
-    width: 65%;
-    height: 3.2rem;
-    background-color: rgba(255, 255, 255, 0.31);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5em 1em 0.5em 1.6em;
-    box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);
-    color: #560e50;
-    font-size: 1.2rem; }
-    .dashboard_form_input:focus {
-      outline: none; }
-  .dashboard_form_submit {
-    border: none;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #460440;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin: 0rem 0 0 0.8rem;
-    box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5); }
-    .dashboard_form_submit:focus {
-      outline: none;
-      background: white;
-      color: #460440; }
+  margin: 2.4rem 0rem; }
+  .dashboard_form {
+    background-color: #fafafa;
+    margin: 2.4rem 1.6rem;
+    padding: 3.2rem; }
+    .dashboard_form_heading {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #666;
+      margin: 0; }
+    .dashboard_form_name {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #000;
+      margin: 0rem 1rem 3rem 0; }
+    .dashboard_form_input {
+      width: 65%;
+      border: 0.05rem solid #666;
+      border-radius: 2rem;
+      padding: 1.4rem;
+      color: #333;
+      background-color: #fafafa;
+      font-size: 1.4rem; }
+      .dashboard_form_input:focus {
+        outline: none; }
+    .dashboard_form_submit {
+      /*grid-area: input_submit;*/
+      background-color: #222;
+      /*height: 4.4rem;*/
+      border: none;
+      border-radius: 2rem;
+      margin: 0 0.8rem;
+      padding: 1.4rem;
+      color: #000;
+      font-size: 1.4rem;
+      /*box-shadow: 0 2rem 2rem rgba(171, 110, 166, 0.5);*/
+      color: white; }
+      .dashboard_form_submit:focus {
+        outline: none;
+        color: white;
+        background-color: #ff0d7b; }
   .dashboard_coming_soon {
     color: #460440;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    margin: 8rem 0 1rem 0; }
+    margin: 8rem 3.2rem 5rem 3.2rem; }
   .dashboard_upcoming {
     text-align: center;
     background-color: #fff;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 2%;
-    margin: 1.6rem auto;
-    padding: 2.5rem; }
+    margin: 1.6rem;
+    padding: 4.8rem 2.5rem; }
     .dashboard_upcoming_sub_heading {
       color: #46063999;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       margin: 0.5rem 0; }
     .dashboard_upcoming_headline {
       color: #6a0b58;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin: 0.5rem 0; }
   .dashboard_brand_name {
-    text-transform: uppercase;
-    margin: 4rem 1rem;
-    font-size: 1.2rem;
+    /*text-transform: uppercase;*/
+    margin: 4rem;
+    font-size: 1.6rem;
     font-weight: 900; }
 
 /*info card shared */
+.path {
+  font-size: 1.2rem;
+  margin: 5.6rem 4rem 4rem 4rem; }
+
 .info_card {
-  padding: 1rem; }
+  padding: 1.6rem; }
   .info_card_row1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem; }
     .info_card_row1_id {
-      font-size: 1.9rem;
-      font-weight: 900;
-      color: #6a0b58; }
+      font-size: 2rem;
+      font-weight: 700;
+      color: #111; }
     .info_card_row1_code {
       margin: -1.2rem 2rem 0 0; }
       .info_card_row1_code_headline {
-        font-size: 0.9rem;
-        color: #46063999; }
+        font-size: 1.2rem;
+        color: #666; }
       .info_card_row1_code_value {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: #111; }
   .info_card_row2 {
     display: flex;
     justify-content: space-between; }
     .info_card_row2_cl1_headline, .info_card_row2_cl2_headline {
-      font-size: 0.9rem;
-      color: #46063999; }
+      font-size: 1.2rem;
+      color: #666; }
     .info_card_row2_cl1_value, .info_card_row2_cl2_value {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       color: #111; }
     .info_card_row2_break {
       height: 4rem;
       margin-top: 0.2rem;
-      border: 0.1rem solid #70707030; }
+      border: 0.1rem solid #aaa; }
 
 .details_section_card,
 .public_details_card {
-  background-color: #fff;
-  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  /*box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);*/
   border-radius: 2%;
-  margin: 0rem auto;
-  padding: 2.5rem;
+  margin: 4rem auto;
+  padding: 3.2rem;
   max-width: 75%; }
   .details_section_card_tagline,
   .public_details_card_tagline {
-    font-size: 1.2rem;
-    color: #46063999;
+    font-size: 1.4rem;
+    color: #111;
     text-align: center;
     text-transform: uppercase;
     margin: 1rem 0; }
@@ -496,7 +519,7 @@ h6 {
         max-width: 38%;
         padding: 1rem;
         height: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         border: 0.1rem solid #70707080; }
         .details_section_card_form_input_1:focus, .details_section_card_form_input_2:focus,
         .public_details_card_form_input_1:focus,
@@ -506,7 +529,7 @@ h6 {
     .details_section_card_form_submit,
     .public_details_card_form_submit {
       height: 2rem;
-      font-size: 1.2 rem;
+      font-size: 1.6 rem;
       border: none;
       background-color: #70707030;
       padding: 2rem;
@@ -522,24 +545,26 @@ h6 {
     .details_section_card_form_back,
     .public_details_card_form_back {
       margin: 1.5rem auto;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       text-align: center;
-      text-decoration: underline;
+      color: #ff0d7b;
+      /*text-decoration: underline;*/
       text-transform: uppercase; }
   .details_section_card_back,
   .public_details_card_back {
-    margin: 2.5rem 1rem;
-    font-size: 1.2rem;
+    margin: 2.5rem 1.6rem;
+    font-size: 1.6rem;
     text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase; }
+    color: #ff0d7b;
+    /*text-decoration: underline;*/
+    /*text-transform: uppercase;*/ }
 
 .details_section_brand_name,
 .public_details_brand_name {
-  text-transform: uppercase;
-  margin: 3rem;
-  font-size: 1.2rem;
-  font-weight: 900; }
+  /*text-transform: uppercase;*/
+  margin: 4rem;
+  font-size: 1.6rem;
+  font-weight: 700; }
 
 .details_section_transactions,
 .public_details_transactions {
@@ -547,30 +572,31 @@ h6 {
   .details_section_transactions_headline,
   .public_details_transactions_headline {
     font-weight: 700;
-    font-size: 1rem;
-    color: #54064e; }
+    font-size: 1.4rem;
+    color: #111;
+    margin: 5.6rem 1rem; }
 
 .transactions {
-  margin: 2rem 0; }
+  margin: 3.2rem 0.8rem; }
   .transactions_box {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    border-bottom: 0.05rem solid #70707030; }
+    margin: 1.6rem 0;
+    padding: 1.6rem 0;
+    border-bottom: 0.05rem solid #ddd; }
     .transactions_box_row_name {
       font-weight: 700;
-      font-size: 1.3rem;
-      color: #54064e; }
+      font-size: 1.6rem;
+      color: #111; }
     .transactions_box_row_date {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 500;
-      color: #00000080; }
+      color: #999; }
     .transactions_box_row_bill {
-      color: green;
-      font-size: 1.1rem;
+      color: #ff0d7b;
+      font-size: 1.4rem;
       text-align: right; }
     .transactions_box_row_debit {
       color: red;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       text-align: right; }

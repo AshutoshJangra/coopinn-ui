@@ -31,7 +31,9 @@ const Header = () => {
 	return (
 		<div className="header">
 			{/*<img src={logoCo} />*/}
-			<h2 className="logo">coopinn.</h2>
+			<Link to="/" className="logo">
+				coopinn.
+			</Link>
 
 			<nav className="navlinks">{renderLink()}</nav>
 		</div>

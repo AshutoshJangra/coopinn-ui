@@ -26,6 +26,7 @@ const Dashboard = () => {
 
 	return (
 		<div className="dashboard">
+			<h6 className="path"> Dashboard | {name} </h6>
 			<form onSubmit={submitForm} className="dashboard_form">
 				<h3 className="dashboard_form_heading"> Welcome </h3>
 				<h1 className="dashboard_form_name"> {name} </h1>
