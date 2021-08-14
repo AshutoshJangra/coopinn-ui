@@ -19,13 +19,8 @@ const PublicDetail = (props) => {
 
 	return user ? (
 		<section className="public_details">
-			<h6 className="path"> Dashboard | {number}</h6>
-
 			<div className="public_details_card">
 				<InfoCard data={user.user} role="user" />
-				<Link className="public_details_card_back" to="/">
-					Go Back
-				</Link>
 			</div>
 
 			<div className="public_details_transactions">

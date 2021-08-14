@@ -480,8 +480,8 @@
 
 			&:focus {
 				outline: none;
-				background: white;
-				color: #ff0d7b;
+				color: white;
+				backgound-color: #ff0d7b;
 			}
 		}
 	}
@@ -495,12 +495,12 @@
 }
 
 .dashboard {
-	margin: 2.4rem 0rem;
+	margin: 4rem 0rem;
 
 	&_form {
 		background-color: #fafafa;
 		margin: 2.4rem 1.6rem;
-		padding: 3.2rem;
+		padding: 3.2rem 2.4rem;
 		&_heading {
 			font-size: 1.6rem;
 			font-weight: 400;
@@ -534,7 +534,8 @@
 			/*height: 4.4rem;*/
 			border: none;
 			border-radius: 2rem;
-			margin: 0 0.8rem;
+			margin: 0;
+			margin-left: 0.8rem;
 			padding: 1.4rem;
 			color: #000;
 			font-size: 1.4rem;
@@ -550,10 +551,10 @@
 	}
 
 	&_coming_soon {
-		color: #460440;
+		color: #111;
 		font-size: 1.4rem;
 		text-transform: uppercase;
-		margin: 8rem 3.2rem 5rem 3.2rem;
+		margin: 8rem 3.2rem 3.2rem 3.2rem;
 	}
 
 	&_upcoming {
@@ -561,17 +562,18 @@
 		background-color: #fff;
 		box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
 		border-radius: 2%;
-		margin: 1.6rem;
-		padding: 4.8rem 2.5rem;
+		margin: 1.6rem 2.4rem;
+		padding: 4.8rem 3.2rem;
 
 		&_sub_heading {
-			color: #46063999;
+			color: #333;
 			font-size: 1.4rem;
 			margin: 0.5rem 0;
+			font-weight: 400;
 		}
 
 		&_headline {
-			color: #6a0b58;
+			color: #111;
 			font-size: 1.6rem;
 			margin: 0.5rem 0;
 		}
@@ -586,10 +588,7 @@
 }
 
 /*info card shared */
-.path {
-	font-size: 1.2rem;
-	margin: 5.6rem 4rem 4rem 4rem;
-}
+
 .info_card {
 	padding: 1.6rem;
 
@@ -717,11 +716,14 @@
 		}
 
 		&_back {
-			margin: 2.5rem 1.6rem;
+			margin: 1.6rem;
 			font-size: 1.6rem;
 			text-align: center;
 			color: #ff0d7b;
-			/*text-decoration: underline;*/
+			border: 0.05rem solid #ff0d7b;
+			border-radius: 2rem;
+			padding: 1rem;
+			text-decoration: none;
 			/*text-transform: uppercase;*/
 		}
 	}
@@ -738,7 +740,7 @@
 			font-weight: 700;
 			font-size: 1.4rem;
 			color: #111;
-			margin: 5.6rem 1rem;
+			margin: 5.6rem 1rem 3.2rem 1rem;
 		}
 
 		margin: 4rem 3rem;

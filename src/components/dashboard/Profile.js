@@ -25,12 +25,8 @@ const Profile = (props) => {
 	}, []);
 	return (
 		<section className="public_details">
-			<h6 className="path">Profile View</h6>
 			<div className="public_details_card">
 				<InfoCard data={user.shop} role="shop" />
-				<Link className="public_details_card_back" to="/">
-					Go Back
-				</Link>
 				<Link
 					className="public_details_card_back"
 					to="/"
