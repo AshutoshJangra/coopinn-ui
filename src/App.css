@@ -97,7 +97,7 @@ h6 {
   /*background-color: #ebe4df;*/ }
   .header .logo {
     margin: 1.2rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: none;
     font-weight: 700;
     color: #000; }
@@ -106,7 +106,7 @@ h6 {
     padding: 0.8rem 0;
     /*text-transform: uppercase;*/
     font-weight: 700;
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
     .header .navlinks .navlink {
       color: #000;
       text-decoration: none; }
@@ -174,13 +174,13 @@ h6 {
         color: white;
         background-color: #ff0d7b; }
   .public_view .shop_login {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    text-transform: uppercase;
-    padding: 0rem 5.5rem;
+    /*text-transform: uppercase;*/
+    padding: 0rem 4rem;
     margin: 1rem 0; }
     .public_view .shop_login_link {
-      color: #111;
+      color: #ff0d7b;
       text-decoration: none; }
   .public_view .hero_banner {
     text-align: center;
@@ -383,8 +383,8 @@ h6 {
   margin: 4rem 0rem; }
   .dashboard_form {
     background-color: #fafafa;
-    margin: 2.4rem 1.6rem;
-    padding: 3.2rem 2.4rem; }
+    margin: 2.4rem 0.8rem;
+    padding: 3.2rem 3.2rem; }
     .dashboard_form_heading {
       font-size: 1.6rem;
       font-weight: 400;

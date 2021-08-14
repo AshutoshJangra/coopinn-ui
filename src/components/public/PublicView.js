@@ -61,9 +61,9 @@ const PublicView = () => {
 			</form>
 
 			<div className="shop_login">
-				{/*<Link className="shop_login_link" to="/login">
-					view your profile &rarr;
-				</Link>*/}
+				<Link className="shop_login_link" to="/login">
+					Login as Merchant &rarr;
+				</Link>
 			</div>
 
 			<div className="hero_banner">

@@ -117,7 +117,7 @@
 
 	& .logo {
 		margin: 1.2rem;
-		font-size: 1.8rem;
+		font-size: 2rem;
 		text-decoration: none;
 		font-weight: 700;
 		color: #000;
@@ -128,7 +128,7 @@
 		padding: 0.8rem 0;
 		/*text-transform: uppercase;*/
 		font-weight: 700;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 
 		& .navlink {
 			color: #000;
@@ -219,15 +219,15 @@
 	}
 
 	& .shop_login {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		font-weight: 700;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 
-		padding: 0rem 5.5rem;
+		padding: 0rem 4rem;
 		margin: 1rem 0;
 
 		&_link {
-			color: #111;
+			color: #ff0d7b;
 			text-decoration: none;
 		}
 	}
@@ -499,8 +499,8 @@
 
 	&_form {
 		background-color: #fafafa;
-		margin: 2.4rem 1.6rem;
-		padding: 3.2rem 2.4rem;
+		margin: 2.4rem 0.8rem;
+		padding: 3.2rem 3.2rem;
 		&_heading {
 			font-size: 1.6rem;
 			font-weight: 400;
