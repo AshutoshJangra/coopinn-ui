@@ -6,22 +6,15 @@ const PublicFeatures = () => {
 			<div className="feature_1 feature">
 				<h2 className="feature_headline">Save Money</h2>
 				<p className="feature_paragraph">
-					save money on every purchase. get assured cashback and use
-					it for your next purchase
+					save money on purchase at your local shops everytime. get
+					assured discounts and use it for your next purchase
 				</p>
 			</div>
 			<div className="feature_2 feature">
 				<h2 className="feature_headline">No Debit Card Required</h2>
 				<p className="feature_paragraph">
-					save money on every purchase. get assured cashback and use
-					it for your next purchase
-				</p>
-			</div>
-			<div className="feature_3 feature">
-				<h2 className="feature_headline">Coopinn Rewards</h2>
-				<p className="feature_paragraph">
-					save money on every purchase. get assured cashback and use
-					it for your next purchase
+					no debit or credit card required. start using now with zero
+					setup
 				</p>
 			</div>
 		</section>

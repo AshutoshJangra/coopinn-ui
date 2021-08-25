@@ -18,12 +18,15 @@ const PublicElite = () => {
 					</h2>
 
 					<p className="elite_section_box_content_feature">
-						Show Card At Any Coopinn Merchant
+						Turn your regular shopping into an experience like never
+						before with Coopinn Rewards card. Show your personalized
+						card to your local shop at the time of payment and avail
+						benefits seamlessly.
 					</p>
-					<p className="elite_section_box_content_feature">
-						Get Or Redeem Credits
+					<p className="elite_section_box_content_feature_2">
+						Free of Cost
 					</p>
-					<p className="elite_section_box_content_feature">
+					{/*<p className="elite_section_box_content_feature">
 						Customized Coopinn Elite Card
 					</p>
 					<p className="elite_section_box_content_feature">
@@ -31,7 +34,7 @@ const PublicElite = () => {
 					</p>
 					<p className="elite_section_box_content_feature">
 						Seemless Checkout
-					</p>
+					</p>*/}
 				</div>
 			</div>
 		</section>

@@ -3,6 +3,7 @@ import { Link, Redirect } from "react-router-dom";
 
 import PublicFeatures from "./PublicFeatures";
 import PublicWorking from "./PublicWorking";
+import PublicShop from "./PublicShop";
 import PublicElite from "./PublicElite";
 import PublicFooter from "./PublicFooter";
 
@@ -34,7 +35,7 @@ const PublicView = () => {
 				Coin At <br /> Every <span> Pinn.</span>
 				<p className="public_view_headline_description">
 					Get Assured Discounts Upto 10% on Your Every Purchase at
-					Coopinn Merchant
+					Nearby Local Shop
 				</p>
 			</h1>
 			<form className="form_box" onSubmit={handleSubmit}>
@@ -77,12 +78,19 @@ const PublicView = () => {
 			<section className="features">
 				<PublicFeatures />
 			</section>
-			<section className="workings">
-				<PublicWorking />
-			</section>
+
 			<section className="elite">
 				<PublicElite />
 			</section>
+
+			<section className="workings">
+				<PublicWorking />
+			</section>
+
+			<section className="shops">
+				<PublicShop />
+			</section>
+
 			<footer className="public">
 				<PublicFooter />
 			</footer>

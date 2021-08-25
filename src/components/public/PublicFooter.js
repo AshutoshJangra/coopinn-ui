@@ -10,6 +10,7 @@ const PublicFooter = () => {
 				<p className="public_footer_public_cta">
 					Get Your Card
 					<span>NOW</span>
+					At Any Nearby Coopinn Shop
 				</p>
 			</div>
 
