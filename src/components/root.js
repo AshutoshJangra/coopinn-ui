@@ -6,6 +6,7 @@ import Login from "./auth/login/login";
 import Register from "./auth/login/register";
 
 import Header from "./shared/Header";
+import Footer from "./shared/Footer";
 
 import Dashboard from "./dashboard/Dashboard";
 import Detail from "./dashboard/Detail";
@@ -76,6 +77,8 @@ function Root() {
 						<Profile />
 					</ProtectedRoute>
 				</Switch>
+
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);

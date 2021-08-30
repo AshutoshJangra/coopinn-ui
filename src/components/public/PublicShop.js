@@ -5,8 +5,8 @@ const PublicShop = () => {
 		<section className="shop_section">
 			<h4 className="shop_section_heading">What Makes Us Unique ?</h4>
 			<h4 className="shop_section_subheading">
-				Redeem the rewards you get from one shop at any other shops from
-				ever growing premium ecosystem.
+				Use the rewards at any shops from ever growing premium
+				ecosystem.
 			</h4>
 			<div className="shop">
 				<h4 className="shop_heading">Newly Added</h4>
@@ -41,7 +41,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Redeem At Any Local Nearby Coopinn Merchant
+						Give Your Mobile Number To your Local Shop At Payment
 					</h2>
 				</div>
 				<div className=" shop_box">
@@ -51,7 +51,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Redeem At Any Local Nearby Coopinn Merchant
+						Give Your Mobile Number To your Local Shop At Payment
 					</h2>
 				</div>
 				<div className=" shop_box">
@@ -65,7 +65,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Redeem At Any Local Nearby Coopinn Merchant
+						Give Your Mobile Number To your Local Shop At Payment
 					</h2>
 				</div>
 			</div>

@@ -8,6 +8,7 @@ import PublicElite from "./PublicElite";
 import PublicFooter from "./PublicFooter";
 
 import coopinncard from "../../images/coopinncard.svg";
+import quiz from "../../images/quiz.svg";
 import hero from "../../images/hero.svg";
 
 const PublicView = () => {
@@ -34,11 +35,14 @@ const PublicView = () => {
 				</div>*/}
 				Coin At <br /> Every <span> Pinn.</span>
 				<p className="public_view_headline_description">
-					Get Assured Discounts Upto 10% on Your Every Purchase at
-					Nearby Local Shop
+					Get Assured Discounts Upto 10% on Every Purchase at Nearby
+					Local Shop
 				</p>
 			</h1>
 			<form className="form_box" onSubmit={handleSubmit}>
+				<h2 className="form_box_headline">
+					Enter Details to View Profile & Credit History
+				</h2>
 				<input
 					type="number"
 					className="input_mobile"
@@ -63,15 +67,11 @@ const PublicView = () => {
 
 			<div className="shop_login">
 				<Link className="shop_login_link" to="/login">
-					Login as Merchant &rarr;
+					or Login as Merchant &rarr;
 				</Link>
 			</div>
 
 			<div className="hero_banner">
-				{/*<Link className="shop_login_link" to="/login">
-					view your profile &rarr;
-				</Link>*/}
-
 				<img className="image" src={hero} alt="" />
 			</div>
 

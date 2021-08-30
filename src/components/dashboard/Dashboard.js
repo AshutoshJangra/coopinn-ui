@@ -54,8 +54,6 @@ const Dashboard = () => {
 					Engage Customer And Promote Your Product Through SMS
 				</h3>
 			</section>
-
-			<footer className="dashboard_brand_name"> coopinn. </footer>
 		</div>
 	);
 };

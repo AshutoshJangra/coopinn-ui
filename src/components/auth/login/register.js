@@ -105,7 +105,6 @@ const Register = () => {
 			</form>
 
 			{error ? "error yes" : ""}
-			<h2 className="register_section_brand_name"> coopinn. </h2>
 		</section>
 	);
 };

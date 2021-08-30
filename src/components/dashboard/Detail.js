@@ -104,8 +104,6 @@ const Detail = (props) => {
 					</Link>
 				</form>
 			</section>
-
-			<footer className="details_section_brand_name"> coopinn. </footer>
 		</section>
 	) : (
 		<div> please wait.... </div>

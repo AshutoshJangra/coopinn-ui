@@ -45,7 +45,6 @@ const Login = () => {
 					type="submit"
 				/>
 			</form>
-			<h2 className="login_section_brand_name"> coopinn. </h2>
 		</section>
 	);
 };

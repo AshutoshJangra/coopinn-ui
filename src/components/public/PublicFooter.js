@@ -13,8 +13,6 @@ const PublicFooter = () => {
 					At Any Nearby Coopinn Shop
 				</p>
 			</div>
-
-			<h2 className="public_footer_brand_name"> coopinn. </h2>
 		</section>
 	);
 };
