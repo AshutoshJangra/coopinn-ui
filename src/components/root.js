@@ -27,7 +27,7 @@ function Root() {
 
 	return (
 		<div className="mainApp">
-			{/*<div className="design">
+			<div className="design">
 				<div className="color_box">
 					<div className="c1"> </div>
 					<div className="c2"> </div>
@@ -41,7 +41,7 @@ function Root() {
 					<div className="c5"> </div>
 					<div className="c6"> </div>
 				</div>
-			</div>*/}
+			</div>
 			<BrowserRouter>
 				<Header />
 

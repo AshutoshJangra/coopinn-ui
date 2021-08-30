@@ -67,26 +67,19 @@ h6 {
       z-index: -32; }
     .mainApp .design .color_box .c5 {
       position: relative;
-      top: -27rem;
-      left: 30rem;
-      width: 18rem;
-      height: 18rem;
-      border-radius: 1000%;
-      overflow: hidden;
-      background-color: none;
-      border: 0.05rem solid black;
-      /*filter: blur(50px);*/
-      z-index: -29; }
+      width: 0%;
+      height: 22rem;
+      border-radius: 20%;
+      background-image: linear-gradient(to bottom, rgba(251, 27, 131, 0.19), rgba(228, 48, 48, 0.19));
+      filter: blur(50px);
+      z-index: -32; }
     .mainApp .design .color_box .c6 {
       position: relative;
-      top: -16.5rem;
-      left: 10rem;
-      width: 11rem;
-      overflow: hidden;
-      height: 11rem;
-      border-radius: 1000%;
-      background-color: #ff0d7b;
-      /*filter: blur(50px);*/
+      width: 0%;
+      height: 22rem;
+      border-radius: 20%;
+      background-image: linear-gradient(to bottom, rgba(251, 27, 131, 0.19), rgba(228, 48, 48, 0.19));
+      filter: blur(50px);
       z-index: -32; }
 
 .header {
@@ -142,7 +135,7 @@ h6 {
     text-decoration: underline; }
   .public_view_headline_description {
     padding: 2.4rem 0.5rem 0.8rem 0.5rem;
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
 
 .public_view .form_box {
   margin: 0 2rem;
@@ -166,6 +159,7 @@ h6 {
     border-radius: 2rem;
     padding: 1.4rem;
     color: #333;
+    background-color: #f8f8f8;
     font-size: 1.4rem; }
     .public_view .form_box .input_mobile:focus {
       outline: none; }
@@ -176,6 +170,7 @@ h6 {
     /*height: 2.4rem;*/
     border: 0.05rem solid #aaa;
     border-radius: 2rem;
+    background-color: #f8f8f8;
     padding: 1.4rem;
     color: #333;
     font-size: 1.4rem; }
@@ -287,7 +282,7 @@ h6 {
     /*	max-width: 60%;*/
     display: flex;
     flex-wrap: wrap;
-    margin: 0 1rem; }
+    margin: 0 1.6rem; }
     .working_section .working_box {
       background-color: #fff;
       box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
@@ -313,7 +308,7 @@ h6 {
         margin: 0.3rem 1rem; }
 
 .shop_section {
-  padding: 3.4rem 3.6rem;
+  padding: 5.6rem 3.6rem;
   text-align: center;
   /*background-color: #eff9fc70;*/ }
   .shop_section_heading {
@@ -331,20 +326,21 @@ h6 {
     display: flex;
     flex-wrap: wrap; }
     .shop_section .shop_heading {
-      font-size: 1.6rem;
-      margin: 2.4rem 1.6rem;
-      padding: 1.6rem 8rem;
+      font-size: 2.4rem;
+      margin: 4.8rem auto;
+      padding: 3.2rem auto;
       font-weight: 700;
-      text-transform: uppercase;
-      background-color: #ff0d7b;
-      color: white;
+      /*text-transform: uppercase;*/
+      /*background-color: #ff0d7b;*/
+      color: #111;
       /*text-decoration: underline;*/ }
     .shop_section .shop_box {
-      /*background-color: #fbfbfb;*/
+      background-color: #f8f8f8;
       /*box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);*/
       /*border: 0.05rem solid #aaa;*/
       margin: 1rem auto;
-      padding: 0.8rem; }
+      padding: 2.4rem 3.6rem;
+      border-radius: 0.5rem; }
       .shop_section .shop_box_heading {
         text-align: center;
         display: flex;
@@ -358,7 +354,7 @@ h6 {
         color: #000;
         font-size: 1.2rem;
         font-weight: 500;
-        margin: 1rem 0rem; }
+        margin: 0.8rem 0rem; }
 
 .public_footer_section {
   display: flex;
@@ -376,6 +372,7 @@ h6 {
       font-size: 1.6rem; }
     .public_footer_section .public_footer_public_cta {
       color: #fff;
+      margin: 2.4rem 0;
       padding: 4rem 3.2rem;
       text-align: center;
       background-color: #ff0d7b;
@@ -603,12 +600,12 @@ h6 {
         padding: 1rem;
         height: 2rem;
         font-size: 1.4rem;
-        border: 0.01rem solid #f0f0f0; }
+        border: 0.01rem solid #aaa; }
         .details_section_card_form_input_1:focus, .details_section_card_form_input_2:focus,
         .public_details_card_form_input_1:focus,
         .public_details_card_form_input_2:focus {
           outline: none;
-          border: 0.01rem solid #aaa; }
+          border: 0.01rem solid #ff0d7b; }
     .details_section_card_form_submit,
     .public_details_card_form_submit {
       height: 2rem;
@@ -663,16 +660,18 @@ h6 {
     margin: 5.6rem 1rem 3.2rem 1rem; }
 
 .transactions {
-  margin: 3.2rem 0.8rem; }
+  margin: 3rem 0rem; }
   .transactions_box {
     display: flex;
     justify-content: space-between;
-    margin: 1.6rem 0;
-    padding: 1.6rem 0;
-    border-bottom: 0.05rem solid #ddd; }
+    margin: 0.8rem 0;
+    padding: 2rem 1.6rem;
+    background-color: #f8f8f8;
+    border-radius: 1rem;
+    /*border-bottom: 0.05rem solid #ddd;*/ }
     .transactions_box_row_name {
       font-weight: 700;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: #111; }
     .transactions_box_row_date {
       font-size: 1.2rem;

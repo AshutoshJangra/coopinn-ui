@@ -17,7 +17,7 @@ const PublicShop = () => {
 						<h3 className="shop_box_heading_2"> Grocery </h3>
 					</h4>
 					<h2 className="shop_box_address">
-						Give Your Mobile Number To your Local Shop At Payment
+						8 Marla Chowk, Model Town, Panipat 132103{" "}
 					</h2>
 				</div>
 				<div className=" shop_box">
@@ -31,7 +31,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Give Your Mobile Number To your Local Shop At Payment
+						8 Marla Chowk, Model Town, Panipat 132103{" "}
 					</h2>
 				</div>
 				<div className=" shop_box">
@@ -41,7 +41,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Give Your Mobile Number To your Local Shop At Payment
+						8 Marla Chowk, Model Town, Panipat 132103{" "}
 					</h2>
 				</div>
 				<div className=" shop_box">
@@ -51,7 +51,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Give Your Mobile Number To your Local Shop At Payment
+						8 Marla Chowk, Model Town, Panipat 132103{" "}
 					</h2>
 				</div>
 				<div className=" shop_box">
@@ -65,7 +65,7 @@ const PublicShop = () => {
 					</h4>
 
 					<h2 className="shop_box_address">
-						Give Your Mobile Number To your Local Shop At Payment
+						8 Marla Chowk, Model Town, Panipat 132103{" "}
 					</h2>
 				</div>
 			</div>

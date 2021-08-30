@@ -72,7 +72,7 @@ const PublicView = () => {
 			</div>
 
 			<div className="hero_banner">
-				<img className="image" src={hero} alt="" />
+				{/*<img className="image" src={hero} alt="" />*/}
 			</div>
 
 			<section className="features">
