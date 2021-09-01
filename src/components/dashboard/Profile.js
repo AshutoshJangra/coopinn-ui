@@ -5,6 +5,8 @@ import Transactions from "../shared/Transactions";
 
 import InfoCard from "../shared/InfoCard";
 
+import money from "../../images/money.svg";
+
 import { AuthContext } from "../../contexts/AuthContext";
 
 const axiosInstance = axiosService.getInstance();
@@ -34,6 +36,15 @@ const Profile = (props) => {
 				>
 					logout
 				</Link>
+			</div>
+
+			<div className="public_details_credit">
+				<img
+					className="public_details_credit_image"
+					src={money}
+					alt="credit back image"
+				/>
+				<div className=" public_details_credit_value"> 2459 </div>
 			</div>
 			<div className="public_details_transactions">
 				<h2 className="public_details_transactions_headline">

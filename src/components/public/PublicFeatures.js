@@ -3,6 +3,9 @@ import React from "react";
 const PublicFeatures = () => {
 	return (
 		<section className="features_section">
+			<h1 className="features_section_headline">
+				Be a part of an experience
+			</h1>
 			<div className="feature_1 feature">
 				<h2 className="feature_headline">Save Money</h2>
 				<p className="feature_paragraph">

@@ -27,18 +27,21 @@ const PublicView = () => {
 
 	return (
 		<div className="public_view">
-			<h1 className="public_view_headline">
+			<div className="public_view_hero">
 				{/*<div className="public_view_headline_design">
 					<div className="public_view_headline_design_color_box">
 						<img src={coopinncard} alt="" />
 					</div>
 				</div>*/}
-				Coin At <br /> Every <span> Pinn.</span>
-				<p className="public_view_headline_description">
+				<img className="public_view_hero_image" src={hero} alt="" />
+				<h1 className="public_view_hero_headline">
+					Coin At Every <span> Pinn.</span>
+				</h1>
+				<p className="public_view_hero_description">
 					Get Assured Discounts Upto 10% on Every Purchase at Nearby
 					Local Shop
 				</p>
-			</h1>
+			</div>
 			<form className="form_box" onSubmit={handleSubmit}>
 				<h2 className="form_box_headline">
 					Enter Details to View Profile & Credit History

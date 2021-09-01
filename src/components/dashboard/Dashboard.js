@@ -3,6 +3,7 @@ import axiosService from "../../services/axios-service";
 import { Redirect } from "react-router-dom";
 import * as actions from "../auth/login/actions";
 
+import outreach from "../../images/outreach.svg";
 const axiosInstance = axiosService.getInstance();
 
 const Dashboard = () => {
@@ -35,6 +36,7 @@ const Dashboard = () => {
 					placeholder="Enter Mobile Number"
 					className="dashboard_form_input"
 					onChange={(e) => setNumber(e.target.value)}
+					autofocus
 					required
 				/>
 
@@ -47,6 +49,11 @@ const Dashboard = () => {
 
 			<h3 className="dashboard_coming_soon"> coming soon </h3>
 			<section className="dashboard_upcoming">
+				<img
+					className="dashboard_upcoming_image"
+					src={outreach}
+					alt="outreach campaign"
+				/>
 				<h2 className="dashboard_upcoming_headline">
 					Outreach Campaign
 				</h2>
