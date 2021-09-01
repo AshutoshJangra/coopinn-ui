@@ -21,8 +21,8 @@ const Header = () => {
 		} else {
 			return (
 				<React.Fragment>
-					<Link className="navlink" to="/register">
-						Join Us
+					<Link className="navlink" to="/login">
+						Login
 					</Link>
 				</React.Fragment>
 			);
