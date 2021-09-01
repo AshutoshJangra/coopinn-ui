@@ -27,7 +27,7 @@ const PublicView = () => {
 
 	return (
 		<div className="public_view">
-			<div className="public_view_hero">
+			<div className="public_view_hero ">
 				{/*<div className="public_view_headline_design">
 					<div className="public_view_headline_design_color_box">
 						<img src={coopinncard} alt="" />

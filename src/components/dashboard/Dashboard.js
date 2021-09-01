@@ -27,8 +27,6 @@ const Dashboard = () => {
 
 	return (
 		<div className="dashboard">
-			<h5 className="dashboard_banner"> Welcome | Coopinn Dashboard </h5>
-
 			<form onSubmit={submitForm} className="dashboard_form">
 				<h1 className="dashboard_form_name"> {name} </h1>
 
