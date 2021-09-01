@@ -4,11 +4,6 @@ import welcome from "../../images/welcome.svg";
 const InfoCard = ({ data, role }) => {
 	return data ? (
 		<div className="info_card">
-			<img
-				className="info_card_image"
-				src={welcome}
-				alt="welcome to coopinn"
-			/>
 			<div className="info_card_row1">
 				<h1 className="info_card_row1_id">
 					{role === "user" ? data.userNum : data.sellerName}

@@ -44,7 +44,14 @@ const Profile = (props) => {
 					src={money}
 					alt="credit back image"
 				/>
-				<div className=" public_details_credit_value"> 2459 </div>
+				<div className="public_details_credit_value">
+					<div className="public_details_credit_value_heading">
+						Credits Returned
+					</div>
+					<div className=" public_details_credit_value_text">
+						2459
+					</div>
+				</div>
 			</div>
 			<div className="public_details_transactions">
 				<h2 className="public_details_transactions_headline">

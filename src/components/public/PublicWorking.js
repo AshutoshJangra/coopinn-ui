@@ -19,7 +19,8 @@ const PublicWorking = () => {
 						alt="image_1"
 					/>
 					<h2 className="working_box_headline">
-						Give Your Mobile Number To your Local Shop At Payment
+						Give Your Mobile Number To your Local Shop during
+						Payment
 					</h2>
 				</div>
 				<div className=" working_box">
@@ -31,7 +32,7 @@ const PublicWorking = () => {
 						alt="image_2"
 					/>
 					<h2 className="working_box_headline">
-						Get Assured Cashback Magically
+						Get Assured Cashback
 					</h2>
 				</div>
 				<div className=" working_box">

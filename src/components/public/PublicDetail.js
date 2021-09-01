@@ -19,6 +19,8 @@ const PublicDetail = (props) => {
 
 	return user ? (
 		<section className="public_details">
+			<h5 className="public_details_banner">Welcome | Coopinn Profile</h5>
+
 			<div className="public_details_card">
 				<InfoCard data={user.user} role="user" />
 			</div>
