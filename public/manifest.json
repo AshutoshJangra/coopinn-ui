@@ -1,6 +1,6 @@
 {
   "short_name": "Coopinn",
-  "name": "",
+  "name": "Coopinn Rewards",
   "icons": [
     {
       "src": "favicon.ico",
@@ -14,6 +14,11 @@
     },
     {
       "src": "android-chrome-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
