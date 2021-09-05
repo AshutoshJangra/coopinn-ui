@@ -1,6 +1,6 @@
 {
-  "short_name": "Coopinn",
-  "name": "",
+  "short_name": "coopinn",
+  "name": "coopinn",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "android-chrome-384x384.png",
+      "src": "android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "384x384"
     },
