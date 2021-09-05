@@ -638,6 +638,7 @@
 			background-color: #222;
 			/*height: 4.4rem;*/
 			border: none;
+			-webkit-border: none;
 			border-radius: 2rem;
 			-webkit-border-radius: 2rem;
 			padding: 1.4rem;
@@ -882,12 +883,13 @@
 
 			&_input {
 				display: flex;
+				flex-wrap: wrap;
 				justify-content: space-around;
 				-webkit-justify-content: space-around;
 
 				&_1,
 				&_2 {
-					max-width: 38%;
+					max-width: 30%;
 					padding: 1rem;
 					height: 2rem;
 					font-size: 1.4rem;
@@ -897,6 +899,12 @@
 						outline: none;
 						border: 0.01rem solid #ff0d7b;
 					}
+				}
+
+				&_total {
+					padding: 1rem;
+					/*margin: 0.8rem 1.6rem;*/
+					background-color: #ffd0e5;
 				}
 			}
 
@@ -1017,13 +1025,13 @@
 			}
 
 			&_bill {
-				color: #ff0d7b;
+				color: #333;
 				font-size: 1.4rem;
 				text-align: right;
 			}
 
 			&_debit {
-				color: red;
+				color: #ea3c53;
 				font-size: 1.2rem;
 				text-align: right;
 			}

@@ -18,10 +18,10 @@ const Transactions = ({ data, role }) => {
 						</div>
 						<div className="transactions_box_row">
 							<h4 className="transactions_box_row_bill">
-								+{tran.bill}
+								Bill + {tran.bill}
 							</h4>
 							<h4 className="transactions_box_row_debit">
-								-{tran.debit}
+								Credit - {tran.debit}
 							</h4>
 						</div>
 					</div>

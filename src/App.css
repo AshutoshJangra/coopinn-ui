@@ -47,9 +47,20 @@ h6 {
   -webkit-flex-direction: column;
   align-items: center;
   -webkit-align-items: center;
-  margin: 15rem auto; }
-  .loading_art {
-    width: 60%; }
+  margin: 5.6rem auto; }
+  .loading_box_1 {
+    width: 85vw;
+    height: 35vh;
+    background-color: #f4f5f5;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem; }
+  .loading_box_2 {
+    width: 85vw;
+    height: 10vh;
+    margin-top: 1rem;
+    background-color: #f4f5f5;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem; }
 
 .mainApp .design {
   /*background-color: #f0f0f0;*/
@@ -517,6 +528,7 @@ h6 {
       background-color: #222;
       /*height: 4.4rem;*/
       border: none;
+      -webkit-border: none;
       border-radius: 2rem;
       -webkit-border-radius: 2rem;
       padding: 1.4rem;
@@ -708,12 +720,13 @@ h6 {
     .details_section_card_form_input,
     .public_details_card_form_input {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       -webkit-justify-content: space-around; }
       .details_section_card_form_input_1, .details_section_card_form_input_2,
       .public_details_card_form_input_1,
       .public_details_card_form_input_2 {
-        max-width: 38%;
+        max-width: 30%;
         padding: 1rem;
         height: 2rem;
         font-size: 1.4rem;
@@ -723,6 +736,11 @@ h6 {
         .public_details_card_form_input_2:focus {
           outline: none;
           border: 0.01rem solid #ff0d7b; }
+      .details_section_card_form_input_total,
+      .public_details_card_form_input_total {
+        padding: 1rem;
+        /*margin: 0.8rem 1.6rem;*/
+        background-color: #ffd0e5; }
     .details_section_card_form_submit,
     .public_details_card_form_submit {
       height: 2rem;
@@ -824,10 +842,10 @@ h6 {
       font-weight: 500;
       color: #999; }
     .transactions_box_row_bill {
-      color: #ff0d7b;
+      color: #333;
       font-size: 1.4rem;
       text-align: right; }
     .transactions_box_row_debit {
-      color: red;
+      color: #ea3c53;
       font-size: 1.2rem;
       text-align: right; }

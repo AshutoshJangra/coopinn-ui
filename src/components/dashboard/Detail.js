@@ -9,7 +9,7 @@ const axiosInstance = axiosService.getInstance();
 
 const Detail = (props) => {
 	const [user, setUser] = useState();
-	const [bill, setBill] = useState();
+	const [bill, setBill] = useState(0);
 	const [debit, setDebit] = useState(0);
 	const [error, setError] = useState("");
 	const [msg, setMsg] = useState("");
@@ -93,6 +93,10 @@ const Detail = (props) => {
 							className="details_section_card_form_input_2"
 							onChange={(e) => setDebit(e.target.value)}
 						/>
+
+						<h4 className="details_section_card_form_input_total">
+							{bill - debit}
+						</h4>
 					</div>
 
 					<input
