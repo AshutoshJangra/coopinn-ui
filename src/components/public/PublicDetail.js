@@ -4,17 +4,25 @@ import { Redirect, Link } from "react-router-dom";
 
 import InfoCard from "../shared/InfoCard";
 import Transactions from "../shared/Transactions";
+import Loading from "../shared/Loading";
+import PublicError from "./PublicError";
 
 const PublicDetail = (props) => {
 	const [user, setUser] = useState();
 	const { number, code } = props.match.params;
+	const [error, setError] = useState();
 
 	useEffect(() => {
 		axios
 			.get(
 				`https://apicoopinn.herokuapp.com/api/v1/users?number=${number}&code=${code}`
 			)
-			.then((res) => setUser(res.data));
+			.then((res) => setUser(res.data))
+			.catch((err) =>
+				err.response.data.msg
+					? setError(err.response.data.msg)
+					: setError("")
+			);
 	}, [number, code]);
 
 	return user ? (
@@ -30,9 +38,13 @@ const PublicDetail = (props) => {
 				<Transactions data={user.transactions} role="user" />
 			</div>
 		</section>
+	) : error ? (
+		<div>
+			<PublicError errors={error} />
+		</div>
 	) : (
 		<div>
-			<h5> Please Wait... </h5>
+			<Loading />
 		</div>
 	);
 };

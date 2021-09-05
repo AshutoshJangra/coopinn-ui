@@ -1,8 +1,6 @@
 import react from "react";
 
 const Transactions = ({ data, role }) => {
-	console.log(data, role);
-
 	return data ? (
 		<div className="transactions">
 			{data.map((tran) => {

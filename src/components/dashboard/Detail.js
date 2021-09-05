@@ -3,11 +3,12 @@ import axiosService from "../../services/axios-service";
 import { Redirect, Link, useHistory } from "react-router-dom";
 
 import InfoCard from "../shared/InfoCard";
+import Loading from "../shared/Loading";
 
 const axiosInstance = axiosService.getInstance();
 
 const Detail = (props) => {
-	const [user, setUser] = useState({});
+	const [user, setUser] = useState();
 	const [bill, setBill] = useState();
 	const [debit, setDebit] = useState(0);
 	const [error, setError] = useState("");
@@ -106,7 +107,10 @@ const Detail = (props) => {
 			</section>
 		</section>
 	) : (
-		<div> please wait.... </div>
+		<div>
+			{" "}
+			<Loading />
+		</div>
 	);
 };
 

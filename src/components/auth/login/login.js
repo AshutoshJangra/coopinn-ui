@@ -3,7 +3,7 @@ import { AuthContext } from "../../../contexts/AuthContext";
 import { Redirect } from "react-router-dom";
 
 const Login = () => {
-	const { isAuth, signIn } = useContext(AuthContext);
+	const { isAuth, error, signIn } = useContext(AuthContext);
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -44,6 +44,11 @@ const Login = () => {
 					value="Login"
 					type="submit"
 				/>
+				{error ? (
+					<div className="login_section_form_error">{error}</div>
+				) : (
+					<div />
+				)}
 			</form>
 		</section>
 	);

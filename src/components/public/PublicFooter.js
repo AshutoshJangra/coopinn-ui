@@ -1,7 +1,4 @@
 import React from "react";
-import image_1 from "../../images/image_1.png";
-import image_2 from "../../images/image_2.png";
-import image_3 from "../../images/image_3.png";
 import contact from "../../images/contact.svg";
 
 const PublicFooter = () => {

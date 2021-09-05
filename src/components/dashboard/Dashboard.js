@@ -35,7 +35,7 @@ const Dashboard = () => {
 					placeholder="Enter Mobile Number"
 					className="dashboard_form_input"
 					onChange={(e) => setNumber(e.target.value)}
-					autofocus
+					autoFocus
 					required
 				/>
 

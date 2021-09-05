@@ -28,7 +28,7 @@ const PublicShop = () => {
 							</h3>
 						</h4>
 						<h2 className="shop_box_content_address">
-							8 Marla Chowk, Model Town, Panipat 132103{" "}
+							664R, 8 Marla, Model Town, Panipat 132103
 						</h2>
 					</div>
 				</div>
@@ -49,7 +49,7 @@ const PublicShop = () => {
 						</h4>
 
 						<h2 className="shop_box_content_address">
-							8 Marla Chowk, Model Town, Panipat 132103{" "}
+							Jattal Rd, 8 Marla Colony Chowk, Panipat 132103
 						</h2>
 					</div>
 				</div>
@@ -71,7 +71,8 @@ const PublicShop = () => {
 						</h4>
 
 						<h2 className="shop_box_content_address">
-							8 Marla Chowk, Model Town, Panipat 132103{" "}
+							Model Town Road, Opp. Om Parkash Jain Clinic, Model
+							Town, Panipat 132103
 						</h2>
 					</div>
 				</div>
@@ -87,13 +88,12 @@ const PublicShop = () => {
 								Ravindra Medical
 							</h4>
 							<h3 className="shop_box_content_heading_2">
-								{" "}
-								Medicine{" "}
+								Medicine
 							</h3>
 						</h4>
 
 						<h2 className="shop_box_content_address">
-							8 Marla Chowk, Model Town, Panipat 132103{" "}
+							Near Inder Dairy, Ajad Nagar, Panipat 132103
 						</h2>
 					</div>
 				</div>
@@ -114,7 +114,7 @@ const PublicShop = () => {
 						</h4>
 
 						<h2 className="shop_box_content_address">
-							8 Marla Chowk, Model Town, Panipat 132103{" "}
+							Gohana Road, Near H.P Petrol Pump, Panipat 132103{" "}
 						</h2>
 					</div>
 				</div>

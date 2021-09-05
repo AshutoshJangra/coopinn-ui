@@ -1,6 +1,6 @@
 {
   "short_name": "Coopinn",
-  "name": "Coopinn",
+  "name": "",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#ff0d7b"
+  "background_color": "#fdd0e5"
 }

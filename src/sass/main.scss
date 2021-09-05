@@ -164,9 +164,9 @@
 		/*width: 70%;*/
 		background-color: #ff0d7b;
 		background-color: #fdd0e5;
-
 		color: black;
 		border-radius: 0.5rem;
+		-webkit-border-radius: 0.5rem;
 		font-weight: 300;
 		line-height: 1.3;
 		margin: 4rem 1.6rem;
@@ -196,12 +196,16 @@
 		margin: 0 2rem;
 		background-color: white;
 		border-radius: 0.5rem;
+		-webkit-border-radius: 0.5rem;
 		margin: 3.2rem 1.6rem;
 		padding: 3.2em;
 		display: grid;
 		grid-template-columns: auto auto;
+		-webkit-grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
+		-webkit-grid-template-rows: auto auto;
 		grid-gap: 1rem;
+		-webkit-grid-gap: 1rem;
 
 		&_headline {
 			/*font-weight: 500;*/
@@ -211,10 +215,12 @@
 		}
 		& .input_mobile {
 			grid-column: auto / span 2;
+			-webkit-grid-column: auto / span 2;
 
 			/*height: 2.4rem;*/
 			border: 0.05rem solid #111;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			padding: 1.4rem;
 			color: #333;
 			background-color: #white;
@@ -231,6 +237,7 @@
 			/*height: 2.4rem;*/
 			border: 0.05rem solid #111;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			background-color: white;
 
 			padding: 1.4rem;
@@ -249,6 +256,7 @@
 			/*height: 4.4rem;*/
 			border: none;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			padding: 1.4rem;
 			color: #000;
 			font-size: 1.4rem;
@@ -257,8 +265,6 @@
 
 			&:focus {
 				outline: none;
-				color: white;
-				background-color: #ff0d7b;
 			}
 		}
 	}
@@ -274,6 +280,7 @@
 		&_link {
 			color: #ff0d7b;
 			text-decoration: none;
+			-epub-text-decoration: none;
 		}
 	}
 
@@ -290,6 +297,7 @@
 .features_section {
 	display: flex;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 	margin: 5.6rem 2.4rem;
 	padding: 6rem 3rem;
 
@@ -299,6 +307,7 @@
 		margin: 4.8rem 2rem;
 		padding: 2.4rem;
 		text-align: center;
+		text-transform: capitalize;
 	}
 
 	& .feature {
@@ -340,6 +349,7 @@
 		padding: 4.8rem 1rem;
 		/*border: 0.05rem solid #aaa;*/
 		border-radius: 2%;
+		-webkit-border-radius: 2%;
 		background-color: white;
 
 		&_content {
@@ -391,11 +401,14 @@
 
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		margin: 0 1.2rem;
 		&_box {
 			background-color: #fff;
 			box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
 			border-radius: 2%;
+			-webkit-border-radius: 2%;
 			margin: 3.2rem auto;
 			padding: 3.6rem;
 
@@ -451,6 +464,7 @@
 
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 
 		&_heading {
 			font-size: 2.4rem;
@@ -469,6 +483,7 @@
 			margin: 1rem;
 			/*padding: 2.4rem 3.6rem;*/
 			border-radius: 0.5rem;
+			-webkit-border-radius: 0.5rem;
 			display: flex;
 			&_image {
 				width: 25%;
@@ -506,6 +521,7 @@
 .public_footer_section {
 	display: flex;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	justify-content: space-between;
 	/*background-color: #fff;*/
 	/*margin: 1rem 0 0 0;*/
@@ -540,7 +556,6 @@
 			& span {
 				font-size: 2rem;
 				padding: 0 1rem;
-				text-decoration: underline;
 			}
 		}
 
@@ -592,6 +607,7 @@
 	&_form {
 		display: flex;
 		flex-direction: column;
+		-webkit-flex-direction: column;
 		padding: 3rem;
 		/*box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);*/
 		/*background-color: #fff;*/
@@ -607,6 +623,7 @@
 		&_input {
 			border: 0.05rem solid #666;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			padding: 1.4rem;
 			color: #333;
 			background-color: #fbfcfd;
@@ -622,6 +639,7 @@
 			/*height: 4.4rem;*/
 			border: none;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			padding: 1.4rem;
 			margin: 1rem 0;
 			font-size: 1.4rem;
@@ -630,9 +648,20 @@
 
 			&:focus {
 				outline: none;
-				color: white;
-				backgound-color: #ff0d7b;
+				color: black;
+				background-color: silver;
 			}
+		}
+
+		&_error {
+			background-color: #fdd0e5;
+			border-radius: 0.5rem;
+			-webkit-border-radius: 0.5rem;
+			padding: 0.8rem;
+			color: #b86566;
+			margin: 1.6rem 0;
+			font-size: 1.2rem;
+			font-weight: 700;
 		}
 	}
 
@@ -653,6 +682,7 @@
 		margin: 1.6rem;
 		padding: 0.8rem 2.4rem;
 		border-radius: 0.5rem;
+		-webkit-border-radius: 0.5rem;
 	}
 	&_form {
 		background-color: white;
@@ -660,6 +690,7 @@
 		padding: 3.2rem 3.2rem;
 		/*box-shadow: 0 0rem 9rem 0.1rem rgba(0, 0, 0, 0.1);*/
 		border-radius: 0.5rem;
+		-webkit-border-radius: 0.5rem;
 		&_heading {
 			font-size: 1.6rem;
 			font-weight: 400;
@@ -678,6 +709,7 @@
 			width: 65%;
 			border: 0.05rem solid #666;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			padding: 1.4rem;
 			color: #333;
 			background-color: white;
@@ -693,6 +725,7 @@
 			/*height: 4.4rem;*/
 			border: none;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			margin: 0;
 			margin-left: 0.8rem;
 			padding: 1.4rem;
@@ -720,7 +753,9 @@
 		text-align: center;
 		background-color: gold;
 		box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
 		border-radius: 2%;
+		-webkit-border-radius: 2%;
 		margin: 1.6rem 3.2rem;
 		padding: 4.8rem;
 
@@ -759,6 +794,7 @@
 	&_row1 {
 		display: flex;
 		justify-content: space-between;
+		-webkit-justify-content: space-between;
 		margin-bottom: 2rem;
 
 		&_id {
@@ -783,6 +819,7 @@
 	&_row2 {
 		display: flex;
 		justify-content: space-between;
+		-webkit-justify-content: space-between;
 
 		&_cl1,
 		&_cl2 {
@@ -812,12 +849,14 @@
 		margin: 4.8 rem 1.6rem 0rem 1.6rem;
 		padding: 0.8rem 2.4rem;
 		border-radius: 0.5rem;
+		-webkit-border-radius: 0.5rem;
 	}
 
 	&_card {
 		background-color: white;
 		/*box-shadow: 0 0 9rem 0.1rem rgba(0, 0, 0, 0.1);*/
 		border-radius: 2%;
+		-webkit-border-radius: 2%;
 		margin: 4rem auto;
 		padding: 3.2rem;
 		max-width: 75%;
@@ -839,10 +878,12 @@
 			margin-bottom: 0rem;
 			display: flex;
 			flex-direction: column;
+			-webkit-flex-direction: column;
 
 			&_input {
 				display: flex;
 				justify-content: space-around;
+				-webkit-justify-content: space-around;
 
 				&_1,
 				&_2 {
@@ -894,6 +935,7 @@
 			color: #ff0d7b;
 			border: 0.05rem solid #ff0d7b;
 			border-radius: 2rem;
+			-webkit-border-radius: 2rem;
 			padding: 1rem;
 			text-decoration: none;
 			/*text-transform: uppercase;*/
@@ -913,10 +955,11 @@
 		padding: 0rem 3.2rem;
 		background-color: #fdd0e5;
 		border-radius: 0.5rem;
+		-webkit-border-radius: 0.5rem;
 		display: flex;
 		&_image {
 			width: 45%;
-			transform: translateY(-2rem);
+			-webkit-transform: translateY(-2rem);
 		}
 
 		&_value {
@@ -951,10 +994,12 @@
 	&_box {
 		display: flex;
 		justify-content: space-between;
+		-webkit-justify-content: space-between;
 		margin: 0.8rem 0;
 		padding: 2rem 1.6rem;
 		background-color: white;
 		border-radius: 1rem;
+		-webkit-border-radius: 1rem;
 
 		/*border-bottom: 0.05rem solid #ddd;*/
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Transactions from "../shared/Transactions";
 
 import InfoCard from "../shared/InfoCard";
+import Loading from "../shared/Loading";
 
 import money from "../../images/money.svg";
 
@@ -12,7 +13,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 const axiosInstance = axiosService.getInstance();
 
 const Profile = (props) => {
-	const [user, setUser] = useState({});
+	const [user, setUser] = useState();
 
 	const { signOut } = useContext(AuthContext);
 
@@ -25,7 +26,9 @@ const Profile = (props) => {
 		// 	.get(`http://localhost:8000/api/v1/shops`)
 		// 	.then((res) => setUser(res.data.shop));
 	}, []);
-	return (
+
+	console.log(user);
+	return user ? (
 		<section className="public_details">
 			<div className="public_details_card">
 				<InfoCard data={user.shop} role="shop" />
@@ -49,7 +52,7 @@ const Profile = (props) => {
 						Credits Returned
 					</div>
 					<div className=" public_details_credit_value_text">
-						2459
+						{user.shop.rewardToClaim}
 					</div>
 				</div>
 			</div>
@@ -60,6 +63,11 @@ const Profile = (props) => {
 				<Transactions data={user.transactions} role="shop" />
 			</div>
 		</section>
+	) : (
+		<div>
+			{" "}
+			<Loading />{" "}
+		</div>
 	);
 };
 
