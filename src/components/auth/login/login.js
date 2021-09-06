@@ -21,7 +21,7 @@ const Login = () => {
 		<section className="login_section">
 			<form className="login_section_form" onSubmit={handleSubmit}>
 				<h2 className="login_section_form_title">
-					Login To Your Account
+					Login To Your Shop Dashboard
 				</h2>
 				<input
 					type="text"
