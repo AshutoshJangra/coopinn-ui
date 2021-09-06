@@ -34,13 +34,16 @@ const PublicView = () => {
 					</div>
 				</div>*/}
 				<img className="public_view_hero_image" src={hero} alt="" />
-				<h1 className="public_view_hero_headline">
-					Coin At Every <span> Pinn.</span>
-				</h1>
-				<p className="public_view_hero_description">
-					Get Assured Discounts Upto 10% on Every Purchase at Nearby
-					Local Shop
-				</p>
+
+				<div className="public_view_hero_headline">
+					<h1 className="public_view_hero_headline_head">
+						Coin At Every <span> Pinn.</span>
+					</h1>
+					<p className="public_view_hero_headline_description">
+						Get Assured Discounts Upto 10% on Every Purchase at
+						Nearby Local Shop
+					</p>
+				</div>
 			</div>
 			<form className="form_box" onSubmit={handleSubmit}>
 				<h2 className="form_box_headline">

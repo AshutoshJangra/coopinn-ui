@@ -5,8 +5,15 @@
 	align-items: center;
 	-webkit-align-items: center;
 	margin: 9rem auto;
+
 	&_art {
 		width: 60%;
+		@include respond(tab) {
+			width: 40%;
+		}
+		@include respond(desk) {
+			width: 25%;
+		}
 	}
 
 	&_headline {
@@ -29,11 +36,12 @@
 	align-items: center;
 	-webkit-align-items: center;
 	margin: 5.6rem auto;
+
 	&_box {
 		&_1 {
 			width: 85vw;
 			height: 35vh;
-			background-color: #f4f5f5;
+			background-color: #f4f4f4;
 			border-radius: 1rem;
 			-webkit-border-radius: 1rem;
 		}
@@ -42,7 +50,7 @@
 			width: 85vw;
 			height: 10vh;
 			margin-top: 1rem;
-			background-color: #f4f5f5;
+			background-color: #f4f4f4;
 			border-radius: 1rem;
 			-webkit-border-radius: 1rem;
 		}

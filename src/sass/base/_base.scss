@@ -5,7 +5,14 @@
 }
 
 html {
-	font-size: 64.5%;
+	font-size: 62.5%;
+
+	@include respond(tab) {
+		font-size: 69%;
+	}
+	@include respond(desk) {
+		font-size: 76%;
+	}
 }
 
 body {

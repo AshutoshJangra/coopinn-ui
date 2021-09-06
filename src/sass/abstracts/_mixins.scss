@@ -1,0 +1,33 @@
+/*//MEDIA QUERIES*/
+
+/*0-600px: Phine
+600-900: tablet portrait
+900-1200: tablet landscape
+1200-1800: desktop
+1800-more: big desktop
+
+*/
+
+/*@mixin respond-desktop {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+*/
+/*breakpoint argument choices
+-TAB
+-DESKTOP
+*/
+
+@mixin respond($breakpoint) {
+	@if ($breakpoint == tab) {
+		@media (min-width: 56.25em) {
+			@content;
+		}
+	}
+	@if ($breakpoint == desk) {
+		@media (min-width: 75em) {
+			@content;
+		}
+	}
+}

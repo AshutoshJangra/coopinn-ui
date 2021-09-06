@@ -1,10 +1,34 @@
+/*//MEDIA QUERIES*/
+/*0-600px: Phine
+600-900: tablet portrait
+900-1200: tablet landscape
+1200-1800: desktop
+1800-more: big desktop
+
+*/
+/*@mixin respond-desktop {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+*/
+/*breakpoint argument choices
+-TAB
+-DESKTOP
+*/
 * {
   margin: 0;
   padding: 0;
   /*line-height: 1.2rem;*/ }
 
 html {
-  font-size: 64.5%; }
+  font-size: 62.5%; }
+  @media (min-width: 56.25em) {
+    html {
+      font-size: 69%; } }
+  @media (min-width: 75em) {
+    html {
+      font-size: 76%; } }
 
 body {
   box-sizing: border-box;
@@ -32,6 +56,12 @@ h6 {
   margin: 9rem auto; }
   .error_section_art {
     width: 60%; }
+    @media (min-width: 56.25em) {
+      .error_section_art {
+        width: 40%; } }
+    @media (min-width: 75em) {
+      .error_section_art {
+        width: 25%; } }
   .error_section_headline {
     margin: 3.2rem; }
   .error_section_cta {
@@ -51,14 +81,14 @@ h6 {
   .loading_box_1 {
     width: 85vw;
     height: 35vh;
-    background-color: #f4f5f5;
+    background-color: #f4f4f4;
     border-radius: 1rem;
     -webkit-border-radius: 1rem; }
   .loading_box_2 {
     width: 85vw;
     height: 10vh;
     margin-top: 1rem;
-    background-color: #f4f5f5;
+    background-color: #f4f4f4;
     border-radius: 1rem;
     -webkit-border-radius: 1rem; }
 
@@ -129,6 +159,9 @@ h6 {
   padding: 0.8rem 2.4rem;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
   /*background-color: #ebe4df;*/ }
+  @media (min-width: 75em) {
+    .header {
+      padding: 0.8rem 10rem; } }
   .header .logo {
     margin: 1.2rem;
     font-size: 2rem;
@@ -150,15 +183,18 @@ h6 {
   margin: 2.4rem;
   padding: 1.6rem;
   color: #111; }
+  @media (min-width: 75em) {
+    .footer {
+      padding: 1.6rem 10rem; } }
   .footer_logo {
     text-decoration: none;
     color: #111;
     padding-bottom: 1rem; }
   .footer_copyright, .footer_rights {
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     /*font-weight: 500;*/
-    color: #666; }
+    color: #333; }
 
 .public_view_hero {
   /*width: 70%;*/
@@ -171,19 +207,45 @@ h6 {
   line-height: 1.3;
   margin: 4rem 1.6rem;
   padding: 4rem 3.2rem; }
+  @media (min-width: 75em) {
+    .public_view_hero {
+      margin: 0rem;
+      padding: 4.6rem;
+      display: flex; } }
   .public_view_hero_image {
     width: 90%;
     padding: 2.4rem 1.6rem; }
-  .public_view_hero_headline {
+    @media (min-width: 75em) {
+      .public_view_hero_image {
+        width: 45%;
+        padding: 6.4rem; } }
+  @media (min-width: 75em) {
+    .public_view_hero_headline {
+      padding: 3.2rem 3.5rem 0rem 1.6rem; } }
+  .public_view_hero_headline_head {
     font-size: 2.4rem;
     padding: 3.2rem 0.5rem 0rem 0.5rem; }
-  .public_view_hero span {
+    @media (min-width: 75em) {
+      .public_view_hero_headline_head {
+        font-size: 5.2rem;
+        padding: 3.2rem 2.4rem;
+        padding-top: 4.8rem; } }
+  .public_view_hero_headline span {
     font-size: 3.2rem;
     font-weight: 600;
     text-decoration: underline; }
-  .public_view_hero_description {
+    @media (min-width: 75em) {
+      .public_view_hero_headline span {
+        font-size: 5.2rem;
+        padding: 3.2rem 0.8rem; } }
+  .public_view_hero_headline_description {
     padding: 2.4rem 0.5rem 0.8rem 0.5rem;
     font-size: 1.4rem; }
+    @media (min-width: 75em) {
+      .public_view_hero_headline_description {
+        font-size: 1.8rem;
+        padding: 2.4rem;
+        padding-top: 1.6rem; } }
 
 .public_view .form_box {
   margin: 0 2rem;
@@ -191,7 +253,7 @@ h6 {
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   margin: 3.2rem 1.6rem;
-  padding: 3.2em;
+  padding: 3.2rem;
   display: grid;
   grid-template-columns: auto auto;
   -webkit-grid-template-columns: auto auto;
@@ -199,6 +261,10 @@ h6 {
   -webkit-grid-template-rows: auto auto;
   grid-gap: 1rem;
   -webkit-grid-gap: 1rem; }
+  @media (min-width: 75em) {
+    .public_view .form_box {
+      background-color: #e8fce8;
+      padding: 3.2rem 18.6rem; } }
   .public_view .form_box_headline {
     /*font-weight: 500;*/
     color: #111;
@@ -215,6 +281,9 @@ h6 {
     color: #333;
     background-color: #white;
     font-size: 1.4rem; }
+    @media (min-width: 75em) {
+      .public_view .form_box .input_mobile {
+        background-color: #e8fce8; } }
     .public_view .form_box .input_mobile:focus {
       outline: none; }
   .public_view .form_box .input_passcode {
@@ -229,6 +298,9 @@ h6 {
     padding: 1.4rem;
     color: #333;
     font-size: 1.4rem; }
+    @media (min-width: 75em) {
+      .public_view .form_box .input_passcode {
+        background-color: #e8fce8; } }
     .public_view .form_box .input_passcode:focus {
       outline: none; }
   .public_view .form_box .input_submit {
@@ -267,11 +339,15 @@ h6 {
     max-width: 80%; }
 
 .features_section {
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*-webkit-flex-wrap: wrap;*/
   margin: 5.6rem 2.4rem;
   padding: 6rem 3rem; }
+  @media (min-width: 75em) {
+    .features_section {
+      text-align: center;
+      /*justify-content: center;*/ } }
   .features_section_headline {
     color: #000;
     font-size: 2.4rem;
@@ -279,17 +355,30 @@ h6 {
     padding: 2.4rem;
     text-align: center;
     text-transform: capitalize; }
-  .features_section .feature {
+    @media (min-width: 75em) {
+      .features_section_headline {
+        font-size: 3.2rem; } }
+  @media (min-width: 75em) {
+    .features_section .features {
+      /*max-width: 50%;*/
+      margin: 2.4rem 4.8rem;
+      display: flex; } }
+  .features_section .features_feature {
     padding: 1.6rem 0.5rem;
     margin: 2.4rem 0.5rem;
     position: relative; }
-    .features_section .feature_headline {
+    @media (min-width: 75em) {
+      .features_section .features_feature {
+        max-width: 50%;
+        margin: 2.4rem 4.8rem;
+        padding: 5rem; } }
+    .features_section .features_feature_headline {
       font-size: 1.6rem;
       font-weight: 600;
       color: #000;
       margin-bottom: 0.8rem;
       /*text-decoration: underline;*/ }
-    .features_section .feature_paragraph {
+    .features_section .features_feature_paragraph {
       font-size: 1.4rem;
       color: #111;
       text-transform: capitalize; }
@@ -303,6 +392,9 @@ h6 {
     color: #000;
     font-size: 2rem;
     margin-bottom: 12rem; }
+    @media (min-width: 75em) {
+      .elite_section_heading {
+        font-size: 3.2rem; } }
   .elite_section_box {
     margin: 2rem auto;
     margin-bottom: 0;
@@ -311,11 +403,17 @@ h6 {
     border-radius: 2%;
     -webkit-border-radius: 2%;
     background-color: white; }
+    @media (min-width: 75em) {
+      .elite_section_box {
+        width: 60vw; } }
     .elite_section_box_content {
       margin-top: -11rem;
       /*text-align: center;*/ }
       .elite_section_box_content_image {
         width: 90%; }
+        @media (min-width: 75em) {
+          .elite_section_box_content_image {
+            width: 65%; } }
       .elite_section_box_content_heading {
         color: #000;
         font-size: 2.4rem;
@@ -342,6 +440,9 @@ h6 {
   .working_section_heading {
     font-size: 2.4rem;
     margin: 7.2rem 2rem; }
+    @media (min-width: 75em) {
+      .working_section_heading {
+        font-size: 3.2rem; } }
   .working_section .working {
     /*	max-width: 60%;*/
     display: flex;
@@ -356,6 +457,10 @@ h6 {
       -webkit-border-radius: 2%;
       margin: 3.2rem auto;
       padding: 3.6rem; }
+      @media (min-width: 75em) {
+        .working_section .working_box {
+          max-width: 22vw;
+          padding: 2.4rem; } }
       .working_section .working_box_image {
         max-width: 50%;
         margin: 0.8rem 0;
@@ -378,10 +483,16 @@ h6 {
   padding: 5.6rem 3.6rem;
   text-align: center;
   /*background-color: #eff9fc70;*/ }
+  @media (min-width: 75em) {
+    .shop_section {
+      padding: 2.4rem 10.6rem; } }
   .shop_section_heading {
     font-size: 2.4rem;
     margin: 4rem 2rem 2rem 2rem;
     padding: 1.6rem; }
+    @media (min-width: 75em) {
+      .shop_section_heading {
+        font-size: 3.2rem; } }
   .shop_section_subheading {
     font-size: 1.6rem;
     margin: 1.6rem 1.6rem 7.6rem 1.6rem;
@@ -402,6 +513,9 @@ h6 {
       /*background-color: #ff0d7b;*/
       color: #111;
       /*text-decoration: underline;*/ }
+      @media (min-width: 75em) {
+        .shop_section .shop_heading {
+          font-size: 3.2rem; } }
     .shop_section .shop_box {
       /*background-color: white;*/
       /*box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);*/
@@ -411,6 +525,9 @@ h6 {
       border-radius: 0.5rem;
       -webkit-border-radius: 0.5rem;
       display: flex; }
+      @media (min-width: 75em) {
+        .shop_section .shop_box {
+          margin: 3.2rem; } }
       .shop_section .shop_box_image {
         width: 25%;
         padding: 1.6rem;
@@ -446,6 +563,10 @@ h6 {
     background-color: #fdd0e5;
     margin: 2.4rem;
     border-radius: 0.5rem; }
+    @media (min-width: 75em) {
+      .public_footer_section .public_footer {
+        margin: 2.4rem 0;
+        padding: 4.3rem 0; } }
     .public_footer_section .public_footer_sub_heading_1 {
       color: #111;
       font-size: 1.6rem; }
@@ -455,6 +576,10 @@ h6 {
     .public_footer_section .public_footer_image {
       width: 80%;
       padding: 2.4rem; }
+      @media (min-width: 75em) {
+        .public_footer_section .public_footer_image {
+          width: 50%;
+          padding: 4.8rem; } }
     .public_footer_section .public_footer_public_cta {
       color: #111;
       padding: 1.6rem 3.2rem;
@@ -463,6 +588,10 @@ h6 {
       .public_footer_section .public_footer_public_cta span {
         font-size: 2rem;
         padding: 0 1rem; }
+      @media (min-width: 75em) {
+        .public_footer_section .public_footer_public_cta {
+          font-size: 1.8rem;
+          padding-top: 3.2rem 0; } }
     .public_footer_section .public_footer_seperator {
       display: flex;
       margin: 4rem 0; }
@@ -495,6 +624,14 @@ h6 {
 .register_section {
   /*width: 85%;*/
   margin: 2rem auto; }
+  @media (min-width: 56.25em) {
+    .login_section,
+    .register_section {
+      width: 70%; } }
+  @media (min-width: 75em) {
+    .login_section,
+    .register_section {
+      max-width: 40%; } }
   .login_section_form,
   .register_section_form {
     display: flex;
@@ -560,6 +697,9 @@ h6 {
 
 .dashboard {
   margin: 4rem 0rem; }
+  @media (min-width: 75em) {
+    .dashboard {
+      margin: 4.8rem 10rem; } }
   .dashboard_banner {
     font-size: 1.2rem;
     background-color: #fdd0e5;
@@ -680,6 +820,11 @@ h6 {
       height: 4rem;
       margin-top: 0.2rem;
       border: 0.1rem solid #aaa; }
+
+@media (min-width: 75em) {
+  .details_section,
+  .public_details {
+    margin: 2.4rem 10rem; } }
 
 .details_section_banner,
 .public_details_banner {
@@ -820,6 +965,10 @@ h6 {
     font-size: 1.4rem;
     color: #111;
     margin: 5.6rem 0.5rem 3.2rem 0.5rem; }
+
+@media (min-width: 75em) {
+  .details_section {
+    margin: 2.4rem 15rem; } }
 
 .transactions {
   margin: 3rem 0rem; }

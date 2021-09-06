@@ -5,7 +5,7 @@ const Transactions = ({ data, role }) => {
 		<div className="transactions">
 			{data.map((tran) => {
 				return (
-					<div className="transactions_box">
+					<div className="transactions_box" key={tran.date}>
 						<div className="transactions_box_row">
 							<h2 className="transactions_box_row_name">
 								{role === "user"
