@@ -6,7 +6,7 @@ const InfoCard = ({ data, role }) => {
 		<div className="info_card">
 			<div className="info_card_row1">
 				<h1 className="info_card_row1_id">
-					{role === "user" ? data.userNum : data.sellerName}
+					{role === "user" ? data.number : data.sellerName}
 				</h1>
 
 				<div className="info_card_row1_code">
