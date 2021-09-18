@@ -855,6 +855,14 @@ h6 {
   .public_details_card_info {
     padding: 1rem;
     margin: 2.5rem 0; }
+  .details_section_card_reward,
+  .public_details_card_reward {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.4rem; }
+    .details_section_card_reward_input,
+    .public_details_card_reward_input {
+      margin: 0.8rem; }
   .details_section_card_form,
   .public_details_card_form {
     margin: 4rem 1rem;

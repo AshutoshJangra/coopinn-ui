@@ -11,9 +11,10 @@ const Detail = (props) => {
 	const [user, setUser] = useState();
 	const [bill, setBill] = useState(0);
 	const [debit, setDebit] = useState(0);
+	const [reward, setReward] = useState();
 	const [error, setError] = useState("");
 	const [msg, setMsg] = useState("");
-
+	const arr = [2, 3, 5];
 	let history = useHistory();
 
 	const custNumber = props.match.params.number * 1;
@@ -22,6 +23,7 @@ const Detail = (props) => {
 		bill,
 		custNumber,
 		debit,
+		reward,
 	};
 
 	useEffect(() => {
@@ -74,6 +76,28 @@ const Detail = (props) => {
 				<div className="details_section_card_info">
 					<InfoCard data={user.user} role="user" />
 				</div>
+
+				{arr.map((a) => {
+					return (
+						<label
+							for="reward"
+							className="details_section_card_reward"
+						>
+							<input
+								type="radio"
+								id="html"
+								name="reward"
+								className="details_section_card_reward_input"
+								value={a}
+								onChange={(event) =>
+									setReward(event.target.value)
+								}
+							/>
+							{a}
+						</label>
+					);
+				})}
+
 				<form
 					className="details_section_card_form"
 					onSubmit={handleSubmit}

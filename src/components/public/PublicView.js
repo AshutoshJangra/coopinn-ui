@@ -87,10 +87,6 @@ const PublicView = () => {
 				<PublicWorking />
 			</section>
 
-			<section className="shops">
-				<PublicShop />
-			</section>
-
 			<footer className="public">
 				<PublicFooter />
 			</footer>
